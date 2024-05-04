@@ -1,0 +1,3 @@
+# Notes
+
+- Shoot highest mountain
