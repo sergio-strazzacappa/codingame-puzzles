@@ -4,6 +4,10 @@
 
 ### Easy
 
-- Power of Thor - Episode 1
-- Temperatures
-- The descent
+#### Rectangle Partition
+
+-   c++
+
+-   Power of Thor - Episode 1
+-   Temperatures
+-   The descent
