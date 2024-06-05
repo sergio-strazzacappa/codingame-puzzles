@@ -12,10 +12,18 @@
 -   Javascript
 -   Bash
 
+#### Power Of Thor - Episode 1
+
+-   C
+-   C++
+-   Java
+-   Javascript
+-   Bash
+-   Python
+
 #### Rectangle Partition
 
 -   C++
 
--   Power of Thor - Episode 1
 -   Temperatures
 -   The descent
