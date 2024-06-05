@@ -4,9 +4,17 @@
 
 ### Easy
 
+#### Onboarding
+
+-   C
+-   C++
+-   Java
+-   Javascript
+-   Bash
+
 #### Rectangle Partition
 
--   c++
+-   C++
 
 -   Power of Thor - Episode 1
 -   Temperatures
