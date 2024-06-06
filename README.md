@@ -30,7 +30,15 @@
 -   Javascript
 -   Python
 
+#### The Descent
+
+-   Bash
+-   C
+-   C++
+-   Java
+-   Javascript
+-   Python
+
 #### Rectangle Partition
 
 -   C++
--   The descent
