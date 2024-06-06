@@ -6,24 +6,31 @@
 
 #### Onboarding
 
+-   Bash
 -   C
 -   C++
 -   Java
 -   Javascript
--   Bash
 
 #### Power Of Thor - Episode 1
 
+-   Bash
 -   C
 -   C++
 -   Java
 -   Javascript
+-   Python
+
+#### Temperatures
+
 -   Bash
+-   C
+-   C++
+-   Java
+-   Javascript
 -   Python
 
 #### Rectangle Partition
 
 -   C++
-
--   Temperatures
 -   The descent
