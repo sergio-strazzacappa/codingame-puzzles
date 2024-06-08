@@ -39,6 +39,15 @@
 -   Javascript
 -   Python
 
+#### Mars Lander - Episode 1
+
+-   Bash
+-   C
+-   C++
+-   Java
+-   Javascript
+-   Python
+
 #### Rectangle Partition
 
 -   C++
