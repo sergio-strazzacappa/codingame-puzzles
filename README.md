@@ -4,6 +4,22 @@
 
 ### Easy
 
+#### ASCII Art
+
+-   C++
+-   Java
+-   Javascript
+-   Python
+
+#### Mars Lander - Episode 1
+
+-   Bash
+-   C
+-   C++
+-   Java
+-   Javascript
+-   Python
+
 #### Onboarding
 
 -   Bash
@@ -31,15 +47,6 @@
 -   Python
 
 #### The Descent
-
--   Bash
--   C
--   C++
--   Java
--   Javascript
--   Python
-
-#### Mars Lander - Episode 1
 
 -   Bash
 -   C
