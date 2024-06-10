@@ -55,6 +55,10 @@
 -   Javascript
 -   Python
 
+#### Unary
+
+-   C++
+
 #### Rectangle Partition
 
 -   C++
