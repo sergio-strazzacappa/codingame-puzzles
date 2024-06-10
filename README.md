@@ -20,6 +20,12 @@
 -   Javascript
 -   Python
 
+#### MIME Type
+
+-   C++
+-   Java
+-   Javascript
+
 #### Onboarding
 
 -   Bash
@@ -36,6 +42,10 @@
 -   Java
 -   Javascript
 -   Python
+
+#### Snail Run
+
+-   C++
 
 #### Temperatures
 
