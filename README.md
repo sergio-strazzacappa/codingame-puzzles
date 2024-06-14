@@ -11,6 +11,12 @@
 -   Javascript
 -   Python
 
+#### Defibrillators
+
+-   C++
+-   Java
+-   Javascript
+
 #### Mars Lander - Episode 1
 
 -   Bash
