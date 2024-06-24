@@ -49,6 +49,11 @@
 -   Javascript
 -   Python
 
+#### Rectangle Partition
+
+-   C++
+-   Javascript
+
 #### Snail Run
 
 -   C++
@@ -74,7 +79,5 @@
 #### Unary
 
 -   C++
-
-#### Rectangle Partition
-
--   C++
+-   Java
+-   Javascript
