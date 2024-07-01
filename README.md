@@ -17,6 +17,13 @@
 -   Java
 -   Javascript
 
+#### Horse Racing Duals
+
+-   Bash
+-   C++
+-   Java
+-   Javascript
+
 #### Mars Lander - Episode 1
 
 -   Bash
