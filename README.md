@@ -88,3 +88,9 @@
 -   C++
 -   Java
 -   Javascript
+
+### Medium
+
+#### A-Star Exercise
+
+-   C++
