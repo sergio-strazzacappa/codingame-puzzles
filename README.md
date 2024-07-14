@@ -61,6 +61,10 @@
 -   C++
 -   Javascript
 
+#### Six Degrees Of Kevin Bacon
+
+-   C++
+
 #### Snail Run
 
 -   C++
@@ -92,5 +96,9 @@
 ### Medium
 
 #### A-Star Exercise
+
+-   C++
+
+#### Mars Lander - Episode 2
 
 -   C++
