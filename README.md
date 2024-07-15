@@ -61,6 +61,10 @@
 -   C++
 -   Javascript
 
+#### Retro Typewriter Art
+
+-   C++
+
 #### Six Degrees Of Kevin Bacon
 
 -   C++
