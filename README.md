@@ -39,6 +39,10 @@
 -   Java
 -   Javascript
 
+#### Moves In Maze
+
+-   C++
+
 #### Onboarding
 
 -   Bash
@@ -108,5 +112,11 @@
 -   C++
 
 #### Mars Lander - Episode 2
+
+-   C++
+
+### Hard
+
+#### The Labyrinth
 
 -   C++
