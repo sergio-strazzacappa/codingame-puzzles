@@ -4,6 +4,10 @@
 
 ### Easy
 
+#### 1D Spreadshet
+
+-   C++
+
 #### ASCII Art
 
 -   C++
