@@ -28,6 +28,10 @@
 -   Java
 -   Javascript
 
+#### Logic Gates
+
+-   C++
+
 #### Mars Lander - Episode 1
 
 -   Bash
