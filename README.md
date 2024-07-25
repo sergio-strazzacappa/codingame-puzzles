@@ -117,6 +117,10 @@
 -   Java
 -   Javascript
 
+#### Word Search For Programmers
+
+-   C++
+
 ### Medium
 
 #### A-Star Exercise
