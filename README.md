@@ -131,6 +131,10 @@
 
 -   C++
 
+#### Hidden Word
+
+-   C++
+
 #### Mars Lander - Episode 2
 
 -   C++
