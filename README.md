@@ -29,6 +29,10 @@
 -   Java
 -   Javascript
 
+#### Encryption/Decryption Of Enigma Machine
+
+-   C++
+
 #### Horse Racing Duals
 
 -   Bash
