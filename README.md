@@ -4,8 +4,10 @@
 
 ### Easy
 
-#### 1D Spreadshet
+#### 1D Spreadsheet
 
+-   README.md
+-   C
 -   C++
 
 #### A Bit Of Accounting - Lettering
@@ -38,6 +40,11 @@
 
 -   C++
 
+#### Equivalent Resistance, Circuit Building
+
+-   README.md
+-   C++
+
 #### Horse Racing Duals
 
 -   Bash
@@ -47,6 +54,12 @@
 
 #### Logic Gates
 
+-   C++
+
+#### Ghost Legs
+
+-   README.md
+-   C
 -   C++
 
 #### Mars Lander - Episode 1
