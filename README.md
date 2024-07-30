@@ -149,6 +149,11 @@
 
 -   C++
 
+#### Blunder - Episode 1
+
+-   README.md
+-   C++
+
 #### Format String Validation
 
 -   C++
