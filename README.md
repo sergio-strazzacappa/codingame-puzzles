@@ -1,173 +1,200 @@
-# Codingame Puzzles
+<style>
+    .easy {
+        color: #00ff00;
+    }
 
-## Solo
+    .medium {
+        color: #ffcc00;
+    }
 
-### Easy
+    .hard {
+        color: #0000ff;
+    }
+</style>
+
+# Codingame
+
+## Puzzles
+
+### <p class="easy"> Easy </p>
 
 #### 1D Spreadsheet
 
--   README.md
--   C
--   C++
+1.  C
+2.  C++
 
 #### A Bit Of Accounting - Lettering
 
--   C++
+1.  C++
 
 #### Abcdefghijklmnopqrstuvwxyz
 
--   C++
+1.  C++
 
 #### ASCII Art
 
--   C++
--   Java
--   Javascript
--   Python
+1.  C++
+2.  Java
+3.  Javascript
+4.  Python
 
 #### Create _Turn Here_ Signs
 
--   README.md
--   C++
+1.  C++
 
 #### Defibrillators
 
--   C++
--   Java
--   Javascript
+1.  C++
+2.  Java
+3.  Javascript
 
 #### Encryption/Decryption Of Enigma Machine
 
--   C++
+1.  C++
 
 #### Equivalent Resistance, Circuit Building
 
--   README.md
--   C++
+1.  C++
 
 #### Horse Racing Duals
 
--   Bash
--   C++
--   Java
--   Javascript
+1.  Bash
+2.  C++
+3.  Java
+4.  Javascript
 
 #### Logic Gates
 
--   C++
+1.  C++
 
 #### Ghost Legs
 
--   README.md
--   C
--   C++
+1.  C
+2.  C++
 
 #### Mars Lander - Episode 1
 
--   Bash
--   C
--   C++
--   Java
--   Javascript
--   Python
+1.  Bash
+2.  C
+3.  C++
+4.  Java
+5.  Javascript
+6.  Python
 
 #### MIME Type
 
--   C++
--   Java
--   Javascript
+1.  C++
+2.  Java
+3.  Javascript
 
 #### Moves In Maze
 
--   C++
+1.  C++
 
 #### Onboarding
 
--   Bash
--   C
--   C++
--   Java
--   Javascript
+1.  Bash
+2.  C
+3.  C++
+4.  Java
+5.  Javascript
 
 #### Power Of Thor - Episode 1
 
--   Bash
--   C
--   C++
--   Java
--   Javascript
--   Python
+1.  Bash
+2.  C
+3.  C++
+4.  Java
+5.  Javascript
+6.  Python
 
 #### Rectangle Partition
 
--   C++
--   Javascript
+1.  C++
+2.  Javascript
 
 #### Retro Typewriter Art
 
--   C++
+1.  C++
 
 #### Six Degrees Of Kevin Bacon
 
--   C++
+1.  C++
 
 #### Snail Run
 
--   C++
+1.  C++
 
 #### Temperatures
 
--   Bash
--   C
--   C++
--   Java
--   Javascript
--   Python
+1.  Bash
+2.  C
+3.  C++
+4.  Java
+5.  Javascript
+6.  Python
 
 #### The Descent
 
--   Bash
--   C
--   C++
--   Java
--   Javascript
--   Python
+1.  Bash
+2.  C
+3.  C++
+4.  Java
+5.  Javascript
+6.  Python
 
 #### Unary
 
--   C++
--   Java
--   Javascript
+1.  C++
+2.  Java
+3.  Javascript
 
 #### Word Search For Programmers
 
--   C++
+1.  C++
 
-### Medium
+### <p class="medium"> Medium </p>
 
 #### A-Star Exercise
 
--   C++
+1.  C++
 
 #### Blunder - Episode 1
 
--   README.md
--   C++
+1.  C++
 
 #### Format String Validation
 
--   C++
+1.  C++
 
 #### Hidden Word
 
--   C++
+1.  C++
 
 #### Mars Lander - Episode 2
 
--   C++
+2.  C++
 
-### Hard
+### <p class="hard"> Hard </p>
+
+#### Blunder - Episode 2
+
+1.  C++
 
 #### The Labyrinth
 
--   C++
+1.  C++
+
+## Code Golf
+
+### <p class="easy"> Easy </p>
+
+#### Power Of Thor - Episode 1
+
+1. C
+
+### <p class="medium"> Medium </p>
+
+#### Blunder - Episode 1
+
+1. C++
