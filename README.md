@@ -16,12 +16,11 @@
 
 ## Puzzles
 
-### <p class="easy"> Easy </p>
+### <p class="easy"> **Easy** </p>
 
-#### 1D Spreadsheet
-
-1.  C
-2.  C++
+#### <p class="easy"> 1D Spreadsheet </p>
+    
+[**C** - **C++**]
 
 #### A Bit Of Accounting - Lettering
 
@@ -180,6 +179,10 @@
 #### Blunder - Episode 2
 
 1.  C++
+
+#### Blunder - Episode 3
+
+1. C++
 
 #### The Labyrinth
 
