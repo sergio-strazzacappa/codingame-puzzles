@@ -22,9 +22,9 @@
 
 [**C** - **C++**]
 
-#### A Bit Of Accounting - Lettering
+#### <p class="easy"> A Bit Of Accounting - Lettering </p>
 
-1.  C++
+[**C** - **C++**]
 
 #### Abcdefghijklmnopqrstuvwxyz
 
