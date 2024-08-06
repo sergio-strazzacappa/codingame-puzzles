@@ -1,4 +1,4 @@
-# Blunder - Episode 1
+# Blunder - Episode 2
 
 ## Goal
 
