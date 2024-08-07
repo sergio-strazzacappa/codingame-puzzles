@@ -41,6 +41,10 @@
 
 [**C** - **C++**]
 
+#### <p class="easy"> Card Counting When Easily Distracter </p>
+
+[**C**]
+
 #### Create _Turn Here_ Signs
 
 1.  C++
