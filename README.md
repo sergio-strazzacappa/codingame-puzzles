@@ -154,6 +154,10 @@
 5.  Javascript
 6.  Python
 
+#### <p class="easy"> Triangle Toggle </p>
+
+[**C**]
+
 #### Unary
 
 1.  C++
