@@ -136,6 +136,10 @@
 
 1.  C++
 
+#### <p class="easy"> Table Of Contents </p>
+
+[**C**]
+
 #### Temperatures
 
 1.  Bash
