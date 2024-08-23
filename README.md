@@ -1,14 +1,14 @@
 <style>
     .easy {
-        color: #00ff00;
+        color: #00FF00;
     }
 
     .medium {
-        color: #ffcc00;
+        color: #FFCC00;
     }
 
     .hard {
-        color: #0000ff;
+        color: #0000FF;
     }
 </style>
 
@@ -26,9 +26,9 @@
 
 [**C** - **C++**]
 
-#### Abcdefghijklmnopqrstuvwxyz
+#### <p class="easy"> Abcdefghijklmnopqrstuvwxyz </p>
 
-1.  C++
+[**C** - **C++**]
 
 #### ASCII Art
 
@@ -40,6 +40,10 @@
 #### <p class="easy"> ASCII Art The Drunken Bishop Algorithm </p>
 
 [**C** - **C++**]
+
+#### <p class="easy"> Asteroids </P>
+
+[**C**]
 
 #### <p class="easy"> Card Counting When Easily Distracter </p>
 
