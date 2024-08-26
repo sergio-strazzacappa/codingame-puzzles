@@ -30,12 +30,9 @@
 
 [**C** - **C++**]
 
-#### ASCII Art
+#### <p class="easy"> ASCII Art </p>
 
-1.  C++
-2.  Java
-3.  Javascript
-4.  Python
+[**C** - **C++** - **Java** - **Javascript** - **Python**]
 
 #### <p class="easy"> ASCII Art The Drunken Bishop Algorithm </p>
 
