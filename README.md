@@ -195,6 +195,10 @@
 
 2.  C++
 
+#### <p class="medium"> What The Brainfuck! </P>
+
+[**C**]
+
 ### <p class="hard"> Hard </p>
 
 #### Blunder - Episode 2
