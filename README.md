@@ -217,6 +217,10 @@
 
 ### <p class="easy"> Easy </p>
 
+#### <p class="easy"> ASCII Art </p>
+
+[**C**]
+
 #### Power Of Thor - Episode 1
 
 1. C
