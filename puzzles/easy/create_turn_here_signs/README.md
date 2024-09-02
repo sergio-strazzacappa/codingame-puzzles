@@ -2,7 +2,7 @@
 
 ## Goal
 
-Secretary of Transportation Pete has asked you to program electronic signs \
+Secretary of Transportation Pete has asked you to program electronic signs
 to communicate to drivers that they need to turn left or turn right.
 
 Pete wants lots of options for the signs, so the input is:

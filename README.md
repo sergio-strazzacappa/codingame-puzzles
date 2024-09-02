@@ -42,13 +42,13 @@
 
 [**C**]
 
-#### <p class="easy"> Card Counting When Easily Distracter </p>
+#### <p class="easy"> Card Counting When Easily Distracted </p>
 
 [**C**]
 
-#### Create _Turn Here_ Signs
+#### <p class="easy"> Create _Turn Here_ Signs </p>
 
-1.  C++
+[**C** - **C++**]
 
 #### <p class="easy"> Crop-Circles </p>
 
@@ -172,6 +172,10 @@
 #### Word Search For Programmers
 
 1.  C++
+
+#### <p class="easy"> Zeckendorf Representation, Part I </p>
+
+[**C**]
 
 ### <p class="medium"> Medium </p>
 
