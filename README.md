@@ -67,6 +67,12 @@
 #### Equivalent Resistance, Circuit Building
 
 1.  C++
+2.
+
+#### Ghost Legs
+
+1.  C
+2.  C++
 
 #### Horse Racing Duals
 
@@ -79,10 +85,9 @@
 
 1.  C++
 
-#### Ghost Legs
+#### <p class="easy"> Longest Coast <p/>
 
-1.  C
-2.  C++
+[**C**]
 
 #### Mars Lander - Episode 1
 
