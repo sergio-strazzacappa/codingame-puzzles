@@ -54,11 +54,9 @@
 
 [**C**]
 
-#### Defibrillators
+#### <p class="easy"> Defibrillators </p>
 
-1.  C++
-2.  Java
-3.  Javascript
+[**C** - **C++** - **Java** - **Javascript**]
 
 #### Encryption/Decryption Of Enigma Machine
 
