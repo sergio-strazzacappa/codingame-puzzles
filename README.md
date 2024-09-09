@@ -162,6 +162,10 @@
 5.  Javascript
 6.  Python
 
+#### <p class="easy"> The Mystic Rectangle </p>
+
+[**C**]
+
 #### <p class="easy"> Triangle Toggle </p>
 
 [**C**]
