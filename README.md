@@ -132,6 +132,10 @@
 
 1.  C++
 
+#### <p class="easy"> Rock Paper Scissors Lizard Spock </p>
+
+[**C**]
+
 #### Six Degrees Of Kevin Bacon
 
 1.  C++
