@@ -58,9 +58,9 @@
 
 [**C** - **C++** - **Java** - **Javascript**]
 
-#### Encryption/Decryption Of Enigma Machine
+#### <p class="easy"> Encryption/Decryption Of Enigma Machine </p>
 
-1.  C++
+[**C** - **C++**]
 
 #### Equivalent Resistance, Circuit Building
 
