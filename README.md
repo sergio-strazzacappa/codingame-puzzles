@@ -65,7 +65,6 @@
 #### Equivalent Resistance, Circuit Building
 
 1.  C++
-2.
 
 #### Ghost Legs
 
@@ -113,6 +112,10 @@
 3.  C++
 4.  Java
 5.  Javascript
+
+#### <p class="easy"> Periodic Table Spelling </p>
+
+[**C**]
 
 #### Power Of Thor - Episode 1
 
