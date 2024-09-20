@@ -57,7 +57,7 @@ This will look something like this:
 ## Input
 
 **Line 1**: An integer **N** for the number of unique resistors present in the circuit \
-**Next N lines**: A space separated name and the integer resistance R of a resistor \
+**Next N lines**: A space separated **name** and the integer resistance **R** of a resistor \
 **Last line**: A space separated combination of parentheses, brackets, and names of resistors
 
 ## Output
@@ -66,5 +66,5 @@ The equivalent resistance expressed as a float rounded to the nearest 0.1 Ohms.
 
 ## Constraints
 
-0 < **N** < 10 \\
+0 < **N** < 10 \
 0 < **R** < 100

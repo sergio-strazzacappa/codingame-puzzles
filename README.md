@@ -62,9 +62,9 @@
 
 [**C** - **C++**]
 
-#### Equivalent Resistance, Circuit Building
+#### <p class="easy"> Equivalent Resistance, Circuit Building </p>
 
-1.  C++
+[**C** - **C++**]
 
 #### Ghost Legs
 
