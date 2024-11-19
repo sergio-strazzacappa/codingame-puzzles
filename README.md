@@ -1,4 +1,5 @@
 <style>
+
     .easy {
         color: #00FF00;
     }
@@ -10,6 +11,11 @@
     .hard {
         color: #0000FF;
     }
+
+    .very-hard {
+        color: #FF00FF;
+    }
+
 </style>
 
 # Codingame
@@ -38,7 +44,7 @@
 
 [**C** - **C++**]
 
-#### <p class="easy"> Asteroids </P>
+#### <p class="easy"> Asteroids </p>
 
 [**C**]
 
@@ -66,23 +72,19 @@
 
 [**C** - **C++**]
 
-#### Ghost Legs
+#### <p class="easy"> Ghost Legs </p>
 
-1.  C
-2.  C++
+[**C** - **C++**]
 
-#### Horse Racing Duals
+#### <p class="easy"> Horse Racing Duals </p>
 
-1.  Bash
-2.  C++
-3.  Java
-4.  Javascript
+[**Bash** - **C** - **C++** - **Java** - **Javascript**]
 
 #### Logic Gates
 
 1.  C++
 
-#### <p class="easy"> Longest Coast <p/>
+#### <p class="easy"> Longest Coast </p>
 
 [**C**]
 
@@ -213,7 +215,7 @@
 
 2.  C++
 
-#### <p class="medium"> What The Brainfuck! </P>
+#### <p class="medium"> What The Brainfuck! </p>
 
 [**C**]
 
@@ -227,9 +229,25 @@
 
 1. C++
 
+#### <p class="hard"> Paper-Folding Curve </p>
+
+[**C**]
+
 #### The Labyrinth
 
 1.  C++
+
+### <p class="very-hard"> Very Hard </p>
+
+#### <p class="very-hard"> Chemical Equation Balancing </p>
+
+[**C**]
+
+## Multiplayer
+
+### Fall Challenge 2024
+
+[**C**]
 
 ## Code Golf
 
