@@ -34,11 +34,10 @@ that references it, directly or indirectly.
 
 ## Input
 
-**Line 1**: An integer **N** for the number of cells.  
-**Next N lines**: **operation** **arg1** **arg2**.
+**Line 1**: An integer **N** for the number of cells. \
+**Next N lines**: **operation** **arg1** **arg2**. \
 **operation** is one of { **VALUE**, **ADD**, **SUB**, **MULT** }, **arg1** and
-**arg2** are either a number ("-?[0-9]+"), a reference ("\$[0-9]+") or nothing
-\_.
+**arg2** are either a number ("-?[0-9]+"), a reference ("\$[0-9]+") or nothing.
 
 ## Output
 
@@ -47,9 +46,9 @@ cell **N**
 
 ## Constraints
 
-1 ≤ **N** ≤ 100  
--10000 ≤ **val** ≤ 10000  
-$0 ≤ $**ref** ≤ $(**N**-1)  
-**val** ∈ ℤ  
-**ref** ∈ ℕ  
+1 &leq; **N** &leq; 100 \
+-10000 &leq; **val** &leq; 10000 \
+$0 &leq; $**ref** &leq; $(**N**-1) \
+**val** &isin; &Zeta; \
+**ref** &isin; &Nu; \
 There are **no** cyclic references.
