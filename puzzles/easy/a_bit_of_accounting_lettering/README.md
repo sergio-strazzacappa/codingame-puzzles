@@ -28,16 +28,16 @@ amounts: [27, 30, 42].
 By associating a letter to each payment entry => A 27 / B 30 / C 42 you have to
 match one or more invoices to each.
 
-That gives:  
-A 27 - 27  
-B 30 - 30  
+That gives: \
+A 27 - 27 \
+B 30 - 30 \
 C 42 - 42
 
 ## Input
 
-**Line 1**: An integer **N** representing the number of invoices  
-**Line 2**: An integer **M** representing the number of payment entries  
-**Next N lines**: An integer **invoice** representing the amount of an invoice  
+**Line 1**: An integer **N** representing the number of invoices \
+**Line 2**: An integer **M** representing the number of payment entries \
+**Next N lines**: An integer **invoice** representing the amount of an invoice \
 **Next M lines**: An integer **paymentEntry** representing the amount of a
 payment entry
 
@@ -53,9 +53,9 @@ invoices. Payment entry amount and invoice amounts are separated by a dash
 There are no cases where a match can only be made between multiple payment
 entries with one or multiple invoices, e.g.
 
-A 2 4 - 6  
+A 2 4 - 6 \
 B 2 4 - 1 5
 
-1 ≤ **K** ≤ 26
+1 &leq; **K** &leq; 26
 
 All cases have a unique solution.
