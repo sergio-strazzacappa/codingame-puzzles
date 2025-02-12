@@ -1,167 +1,225 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <string.h>
-#include <stdbool.h>
 
-/**
- * Date: 23/08/2024
- */
+#define TEST            0
+#define NUMBER_FILES    5
+#define LINE_LEN        100
 
-struct Node {
+typedef struct node {
     char elem;
     int row;
     int column;
+} Node;
+
+const char *INPUT_FILE[] = {
+    "input/01_test_1.txt",
+    "input/02_test_2.txt",
+    "input/03_test_3.txt",
+    "input/04_test_4.txt",
+    "input/05_test_5.txt"
 };
 
-void init(void);
-void solve(void);
-void dfs(struct Node node, char next, struct Node solution[26],
-        int* solution_size);
-void clear(void);
-void debug_grid(void);
-void debug_solution(struct Node solution[26], int solution_size);
-void print_solution(struct Node solution[26], int solution_size);
-
+const char *OUTPUT_FILE[] = {
+    "output/01_test_1.txt",
+    "output/02_test_2.txt",
+    "output/03_test_3.txt",
+    "output/04_test_4.txt",
+    "output/05_test_5.txt"
+};
 
 int size;
 char* grid;
 
+void solve(Node solution[]);
+void dfs(Node node, char next, Node solution[26], int* solution_size);
+void print_grid();
+void print_solution(Node solution[], int solution_size);
+
 int main() {
-    init();
-    //print_grid();
-    solve();
+    if (TEST) {
+        for (int i = 0; i < NUMBER_FILES; i++) {
+            FILE *fp;
+            char line[LINE_LEN];
+
+            if ((fp = fopen(INPUT_FILE[i], "r")) == NULL) {
+                printf("[ERROR] Can't open the file %s\n", INPUT_FILE[i]);
+                exit(1);
+            }
+
+            fgets(line, LINE_LEN, fp); // line 1 - size 
+            size = atoi(line);
+
+            grid = (char *)malloc(size * size * sizeof(char));
+    
+            int y = 0;
+            while (fgets(line, LINE_LEN, fp)) {
+                for (int x = 0; x < strlen(line); x++) {
+                    grid[y * size + x] = line[x];
+                }
+                y++;
+            }
+
+            Node solution[26];
+            solve(solution);
+            print_solution(solution, 26);
+
+            fclose(fp);
+
+            if ((fp = fopen(OUTPUT_FILE[i], "r")) == NULL) {
+                printf("[ERROR] Can't open the file %s\n", OUTPUT_FILE[i]);
+                exit(1);
+            }
+
+            int passed = 1;
+            y = 0;
+            while (fgets(line, LINE_LEN, fp)) {
+                for (int x = 0; x < strlen(line); x++) {
+                    if (line[x] != '-') {
+                        for (int j = 0; j < 26; j++) {
+                            Node n = solution[j];
+                            if (n.elem == line[x] && (n.row != y || n.column != x)) {
+                                passed = 0;
+                                break;
+                            }
+                        }
+                    }
+                    if (!passed)
+                        break;
+                }
+                y++;
+                if (!passed)
+                    break;
+            }
+
+            if (passed)
+                printf("PASSED\n");
+            else
+                printf("FAILED\n");
+
+            fclose(fp);
+        }
+    } else {
+        scanf("%d", &size);
+        grid = (char *)malloc(size * size * sizeof(char));
+
+        for (int i = 0; i < size; i++) {
+            char m[size + 1];
+            scanf("%s", m);
+
+            for (int j = 0; j < strlen(m); j++) {
+                grid[i * size + j] = m[j];
+            }
+        }
+
+        Node solution[26];
+        solve(solution);
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                char elem = '-';
+
+                for (int k = 0; k < 26; k++) {
+                    if (solution[k].row == i && solution[k].column == j) {
+                        elem = solution[k].elem;
+                        break;
+                    }
+                }
+                printf("%c", elem);
+            }
+            printf("\n");
+        }
+    }
+
     return 0;
 }
 
-void init() {
-    scanf("%d", &size);
-    grid = malloc(size * size * sizeof(char));
-
-    for (int i = 0; i < size; i++) {
-        char m[size + 1];
-        scanf("%s", m);
-
-        for (int j = 0; j < strlen(m); j++) {
-            grid[i * size + j] = m[j];
-        }
-    }
-}
-
-void solve() {
-    struct Node solution[26];
+void solve(Node solution[]) {
     int solution_size = 0;
     
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size && solution_size < 26; j++) {
-            struct Node root = {
+            Node root = {
                 .elem = grid[i * size + j],
                 .row = i,
                 .column = j
             };
+
             // run dfs for every node
             solution_size = 0;
             dfs(root, 'a', solution, &solution_size);
         }
     }
-    print_solution(solution, solution_size);
 }
 
-/**
- * @param node = current node
- * @param next = next node that should match
- * @param solution = solution find so far
- */
-void dfs(struct Node node, char next, struct Node solution[26],
-        int* solution_size) {
-    fprintf(stderr, "[DEBUG] Running dfs %c (%d, %d) - %c\n", node.elem, node.column, node.row, next);
-
+void dfs(Node node, char next, Node solution[26], int* solution_size) {
     // check if the element is equal to the next expected element
     if (node.elem == next) {
         // add the node to the solution
         solution[next - 'a'] = node;
         *solution_size = *solution_size + 1;
         
-        debug_solution(solution, *solution_size);
-
         if (node.column < size - 1) {
             // right
-            struct Node new_node = {
+            Node new_node = {
                 .elem = grid[node.row * size + node.column + 1],
                 .row = node.row,
                 .column = node.column + 1
             };
-            fprintf(stderr, "Going right\n");
+
             dfs(new_node, next + 1, solution, solution_size);
         }
+
         if (node.row < size - 1) {
             // down
-            struct Node new_node = {
+            Node new_node = {
                 .elem = grid[(node.row + 1) * size + node.column],
                 .row = node.row + 1,
                 .column = node.column
             };
-            fprintf(stderr, "Going down\n");
+
             dfs(new_node, next + 1, solution, solution_size);
         }
+
         if (node.column > 0) {
             // left
-            struct Node new_node = {
+            Node new_node = {
                 .elem = grid[node.row * size + node.column - 1],
                 .row = node.row,
                 .column = node.column - 1
             };
-            fprintf(stderr, "Going left\n");
+ 
             dfs(new_node, next + 1, solution, solution_size);
         }
+
         if (node.row > 0) {
             // up
-            struct Node new_node = {
+            Node new_node = {
                 .elem = grid[(node.row + - 1) * size + node.column],
                 .row = node.row - 1,
                 .column = node.column
             };
-            fprintf(stderr, "Going up\n");
+
             dfs(new_node, next + 1, solution, solution_size);
         }
     }
 }
 
-void clear() {
-    free(grid);
-}
-
-void debug_grid() {
+void print_grid() {
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
-            fprintf(stderr, "%c", grid[i * size + j]);
-        }
-        fprintf(stderr, "\n");
-    }
-}
-
-void debug_solution(struct Node solution[26], int solution_size) {
-    if (solution_size > 0) {
-        fprintf(stderr, "Solution: [%c", solution[0].elem);
-        for (int i = 1; i < solution_size; i++) {
-            fprintf(stderr, ", %c", solution[i].elem);
-        }
-        fprintf(stderr, "]\n");
-    }
-}
-
-void print_solution(struct Node solution[26], int solution_size) {
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            char elem = '-';
-            for (int k = 0; k < solution_size; k++) {
-                if (solution[k].row == i && solution[k].column == j) {
-                    elem = solution[k].elem;
-                    break;
-                }
-            }
-            printf("%c", elem);
+            printf("%c", grid[i * size + j]);
         }
         printf("\n");
+    }
+}
+
+void print_solution(Node solution[], int solution_size) {
+    if (solution_size > 0) {
+        printf("Solution: [\n");
+        for (int i = 0; i < solution_size; i++) {
+            printf(" %c = (%d, %d)\n", solution[i].elem, solution[i]. column, solution[i].row);
+        }
+        printf("]\n");
     }
 }
