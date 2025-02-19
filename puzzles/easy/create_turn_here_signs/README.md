@@ -7,17 +7,18 @@ to communicate to drivers that they need to turn left or turn right.
 
 Pete wants lots of options for the signs, so the input is:
 
--   **direction** -- which is either _left_ or _right_
+-   **direction** -- which is either **left** or **right**
 -   **howManyArrows**
 -   **heightOfArrows**
 -   **strokeThicknessOfArrows**
 -   **spacingBetweenArrows**
--   **additionalIndentOfEachLine** -- this will determine if the shape of the \
+-   **additionalIndentOfEachLine** -- this will determine if the shape of the
     arrows is subtle or more pointy
 
-However, Pete is also a minimalist, so all that input will be in a single string of data.
+However, Pete is also a minimalist, so all that input will be in a single
+string of data.
 
-Note:
+**Note**:
 
 -   Left turn signs will consist of **<** and spaces only
 -   Right turn signs will consist of **>** and spaces only
@@ -41,6 +42,5 @@ Note:
 
 The input string **allInput** is a single word followed by 5 integers. \
 All are separated by a single space. \
-All integers are > 0
-
-**heightOfArrows** is an odd number, ≥ 5
+All integers are &gt; 0 \
+**heightOfArrows** is an odd number, &geq; 5

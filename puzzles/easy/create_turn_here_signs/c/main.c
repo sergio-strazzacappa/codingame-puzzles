@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 void split(char input[]);
-void solve(void);
-void right(void);
-void left(void);
+void solve();
+void right();
+void left();
 void debug();
 
-struct Opts {
-    char* direction;
+struct opts {
+    char *direction;
     int how_many_arrows;
     int height_of_arrows;
     int stroke_thickness_of_arrows;
@@ -22,7 +22,6 @@ int main() {
     scanf("%[^\n]", input);
 
     split(input);
-    debug();
     solve();
 
     return 0;
@@ -53,7 +52,7 @@ void split(char input[]) {
                 opts.additional_indent_of_each_line = atoi(token);
                 break;
             default:
-                fprintf(stderr, "Error splitting the input\n");
+                printf("Error splitting the input\n");
                 break;
         }
         token = strtok(NULL, " ");
