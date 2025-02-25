@@ -35,7 +35,7 @@ int main() {
         for (int j = 0; j < size; j++)
             representation[i * size + j] = row[j];
     }
-    printf("%s\n", solve());
+    printf("%s", solve());
 
     return 0;
 }
