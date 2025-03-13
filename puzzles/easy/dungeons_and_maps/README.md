@@ -75,31 +75,33 @@ direction symbols + **T**) and map **1** contains a valid path with length
 
 ## Input
 
-**Line 1**: Width **W** and height **H** of the maps \
-**Line 2**: **startRow** and **startCol** for the starting position on the map \
-**Line 3**: An integer **N** for the number of maps to check \
-**N * H Lines**: Each **H** consecutive lines are representing a single map.
-Each line contains **W** characters representing a row of a map.
-
-Characters can be:
--   **.** - Empty square
--   **#** - Wall
--   **^** - Move UP
--   **v** - Move DOWN
--   **<** - Move LEFT
--   **>** - Move RIGHT
--   **T** - The treasure square
+-   Line 1: Width **W** and height **H** of the maps
+-   Line 2: **startRow** and **startCol** for the starting position on the map
+-   Line 3: An integer **N** for the number of maps to check
+-   **N** \* **H** Lines: Each **H** consecutive lines are representing a single
+    map
+-   Each line contains **W** characters representing a row of a map
+    Characters can be:
+    -   **.** - Empty square
+    -   **#** - Wall
+    -   **^** - Move UP
+    -   **v** - Move DOWN
+    -   **<** - Move LEFT
+    -   **>** - Move RIGHT
+    -   **T** - The treasure square
 
 ## Output
 
-**index** of the map with the shortest path. If there isn't a map with valid
-path from [ **startRow**; **startCol** ] to **T** output **TRAP**.
+-   **index** of the map with the shortest path. If there isn't a map with
+    valid path from [ **startRow**; **startCol** ] to **T** output **TRAP**
 
 ## Constraints
 
-There is always a **T** on the maps. \
-If there are maps with valid path from [ **startRow**; **startCol** ] to **T**
-only one map holds the shortest path. \
-The given maps are representing the same dungeon, but the position for **T** may differ. \
-0 &lt; **N** &lt; 10 \
-2 &lt; **W**, **H** &lt; 20
+-   There is always a **T** on the maps
+-   If there are maps with valid path from [ **startRow**; **startCol** ] to
+    **T**
+-   only one map holds the shortest path
+-   The given maps are representing the same dungeon, but the position for
+    **T** may differ
+-   0 &lt; **N** &lt; 10
+-   2 &lt; **W**, **H** &lt; 20
