@@ -10,15 +10,15 @@ Each input cell's content is provided as an **operation** with two operands
 
 There are 4 types of operations:
 
--   **VALUE** **arg1** **arg2**: The cell's value is **arg1**, (**arg2** is 
-    not used and will be \_ to aid parsing).
--   **ADD** **arg1** **arg2**: The cell's value is **arg1** + **arg2**.
--   **SUB** **arg1** **arg2**: The cell's value is **arg1** - **arg2**.
--   **MULT** **arg1** **arg2**: The cell's value is arg1 × arg2.
+-   **VALUE** **arg1** **arg2**: The cell's value is **arg1**, (**arg2** is
+    not used and will be \_ to aid parsing)
+-   **ADD** **arg1** **arg2**: The cell's value is **arg1** + **arg2**
+-   **SUB** **arg1** **arg2**: The cell's value is **arg1** - **arg2**
+-   **MULT** **arg1** **arg2**: The cell's value is arg1 × arg2
 
 Arguments can be of two types:
 
--   **Reference** $**ref**: If an argument starts with a dollar sign, it is 
+-   **Reference** $**ref**: If an argument starts with a dollar sign, it is
     a interpreted as a reference and its value is equal to the value of the
     cell by that number **ref**, 0-indexed.
 
@@ -34,21 +34,22 @@ that references it, directly or indirectly.
 
 ## Input
 
-**Line 1**: An integer **N** for the number of cells. \
-**Next N lines**: **operation** **arg1** **arg2**. \
-**operation** is one of { **VALUE**, **ADD**, **SUB**, **MULT** }, **arg1** and
-**arg2** are either a number ("-?[0-9]+"), a reference ("\$[0-9]+") or nothing.
+-   Line 1: An integer **N** for the number of cells
+-   Next **N** lines: **operation** **arg1** **arg2** \
+    **operation** is one of { **VALUE**, **ADD**, **SUB**, **MULT** }, **arg1**
+    and **arg2** are either a number ("-?[0-9]+"), a reference ("\$[0-9]+") or
+    nothing
 
 ## Output
 
-**N lines**: the value of each cell, one value per line, from cell 0 to
-cell **N**
+-   N lines: the value of each cell, one value per line, from cell 0 to cell
+    **N**
 
 ## Constraints
 
-1 &leq; **N** &leq; 100 \
--10000 &leq; **val** &leq; 10000 \
-$0 &leq; $**ref** &leq; $(**N**-1) \
-**val** &isin; &Zeta; \
-**ref** &isin; &Nu; \
-There are **no** cyclic references.
+-   1 &leq; **N** &leq; 100
+-   10000 &leq; **val** &leq; 10000
+-   $0 &leq; $**ref** &leq; $(**N**-1)
+-   **val** &isin; &Zeta;
+-   **ref** &isin; &Nu;
+-   There are **no** cyclic references

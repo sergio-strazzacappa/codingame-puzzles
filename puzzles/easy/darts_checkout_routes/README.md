@@ -11,6 +11,7 @@ The goal is to calculate the number of routes to checkout a given **score** with
 a given number of **darts**.
 
 ### Dartboard
+
 A dartboard contains three different segments: singles, doubles and trebles. The
 values for each are:
 
@@ -46,16 +47,16 @@ route.
 
 ## Input
 
-**Line 1**: Integer **score** representing the remaining score. \
-**Line 2**: Integer **darts** representing the number of darts remaining to
-throw.
+-   Line 1: Integer **score** representing the remaining score
+-   Line 2: Integer **darts** representing the number of darts remaining to
+    throw
 
 ## Output
 
-Integer of number of possible routes to reach **score** using at most **darts**
-number of darts.
+-   Integer of number of possible routes to reach **score** using at most
+    **darts** number of darts
 
 ## Constraints
 
-1 &leq; score &leq; 170 \
-0 &leq; darts &leq; 5
+-   1 &leq; **score** &leq; 170
+-   0 &leq; **darts** &leq; 5

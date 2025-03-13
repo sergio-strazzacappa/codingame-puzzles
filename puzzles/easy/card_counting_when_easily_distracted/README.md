@@ -36,21 +36,21 @@ over 21. It isn't anything you need to calculate; it is provided.)
 
 -   **JT7A44** means: a Jack, a Ten, a 7, an Ace, and two 4s
 -   **JAKE** might be your buddy, but it's not a series of cards, since _E_
-        isn't a valid abbreviation
+    isn't a valid abbreviation
 -   **AT&T** might be your cell-service provider, but it's not a series of
-        cards, since _&_ isn't a valid abbreviation
+    cards, since _&_ isn't a valid abbreviation
 -   **T1** might be a data/telecom line, but it's not a series of cards, since
-        _1_ isn't a valid abbreviation
+    _1_ isn't a valid abbreviation
 
 ## Input
 
-**Line 1**: a string **streamOfConsciousness** \
-**Line 2**: an integer **bustThreshold**
+-   Line 1: a string **streamOfConsciousness**
+-   Line 2: an integer **bustThreshold**
 
 ## Output
 
-**Line 1**: an integer **percentageChance%**
+-   Line 1: an integer **percentageChance**%
 
 ## Constraints
 
-2 &leq; **bustThreshold** &leq; 10
+-   2 &leq; **bustThreshold** &leq; 10

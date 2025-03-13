@@ -54,17 +54,17 @@ displayed, and the other parts should be **-**.
 
 ## Input
 
-**Line 1**: An **integer** **n** for the size of the string figure. \
-**Next n Lines**: multi-line string **m**.
+-   Line 1: An integer **n** for the size of the string figure
+-   Next **n** Lines: multi-line string **m**
 
 ## Output
 
-Output only strings alphabetically from **a** to **z** should be displayed in
-multi-line string **m**, and the other parts should be **-**.
+-   Output only strings alphabetically from **a** to **z** should be displayed
+    in multi-line string **m**, and the other parts should be **-**
 
 ## Constraints
 
-10 &leq; **n** &leq; 30 \
-**m** consists only of lowercase alphabetical characters. \
-There may be more than one **a**. \
-There is only one **abcdefghijklmnopqrstuvwxyz** in the string figure.
+-   10 &leq; **n** &leq; 30
+-   **m** consists only of lowercase alphabetical characters
+-   There may be more than one **a**
+-   There is only one **abcdefghijklmnopqrstuvwxyz** in the string figure

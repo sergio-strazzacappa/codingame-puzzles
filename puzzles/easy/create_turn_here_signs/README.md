@@ -25,22 +25,21 @@ string of data.
 
 ## Input
 
-**Line 1**: string **allInput**, that is composed of:
-
--   **direction**
--   **howManyArrows**
--   **heightOfArrows**
--   **strokeThicknessOfArrows**
--   **spacingBetweenArrows**
--   **additionalIndentOfEachLine**
+-   Line 1: string **allInput**, that is composed of:
+    -   **direction**
+    -   **howManyArrows**
+    -   **heightOfArrows**
+    -   **strokeThicknessOfArrows**
+    -   **spacingBetweenArrows**
+    -   **additionalIndentOfEachLine**
 
 ## Output
 
-**heightOfArrows** lines: the Turn Here sign
+-   **heightOfArrows** lines: the Turn Here sign
 
 ## Constraints
 
-The input string **allInput** is a single word followed by 5 integers. \
-All are separated by a single space. \
-All integers are &gt; 0 \
-**heightOfArrows** is an odd number, &geq; 5
+-   The input string **allInput** is a single word followed by 5 integers
+-   All are separated by a single space
+-   All integers are &gt; 0
+-   **heightOfArrows** is an odd number, &geq; 5

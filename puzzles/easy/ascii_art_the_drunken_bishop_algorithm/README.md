@@ -105,13 +105,14 @@ https://dev.to/krofdrakula/improving-security-by-drawing-identicons-for-ssh-keys
 
 ## Input
 
-**Line 1**: Server fingerprint string format as group of 2 hexadecimal digit separated by **:**.
+-   Line 1: Server fingerprint string format as group of 2 hexadecimal digit
+    separated by **:**
 
 ## Output
 
-**11 lines**: Random ASCII Art
+-   11 lines: Random ASCII Art
 
 ## Constraints
 
-The input string is always 16 bytes (separated by **:**), so there are exactly
-64 steps that can be produced by the input string.
+-   The input string is always 16 bytes (separated by **:**), so there are exactly
+    64 steps that can be produced by the input string

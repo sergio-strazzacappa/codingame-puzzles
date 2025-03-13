@@ -35,27 +35,26 @@ C 42 - 42
 
 ## Input
 
-**Line 1**: An integer **N** representing the number of invoices \
-**Line 2**: An integer **M** representing the number of payment entries \
-**Next N lines**: An integer **invoice** representing the amount of an invoice \
-**Next M lines**: An integer **paymentEntry** representing the amount of a
-payment entry
+-   Line 1: An integer **N** representing the number of invoices
+-   Line 2: An integer **M** representing the number of payment entries
+-   Next **N** lines: An integer **invoice** representing the amount of an invoice
+-   Next **M** lines: An integer **paymentEntry** representing the amount of a
+    payment entry
 
 ## Output
 
-**K lines**: **A** **B** - **C** : One match per line where **A** is the letter
-of the lettering, **B** the amount of payment entry and **C** the amounts of
-invoices. Payment entry amount and invoice amounts are separated by a dash
-**-**. Invoice amounts are separated by a space.
+-   K lines **A** **B** - **C**: One match per line where **A** is the letter
+    of the lettering, **B** the amount of payment entry and **C** the amounts of
+    invoices. Payment entry amount and invoice amounts are separated by a dash
+    **-**. Invoice amounts are separated by a space
 
 ## Constraints
 
-There are no cases where a match can only be made between multiple payment
-entries with one or multiple invoices, e.g.
+-   There are no cases where a match can only be made between multiple payment
+    entries with one or multiple invoices, e.g.
 
-A 2 4 - 6 \
-B 2 4 - 1 5
+    A 2 4 - 6 \
+    B 2 4 - 1 5
 
-1 &leq; **K** &leq; 26
-
-All cases have a unique solution.
+-   1 &leq; **K** &leq; 26
+-   All cases have a unique solution

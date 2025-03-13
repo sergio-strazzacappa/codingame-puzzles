@@ -27,14 +27,15 @@ increasing in the downward direction.
 
 ## Input
 
-**Line 1**: five ints separated by a space, **W** **H** **t1** **t2** **t3** \
-**Next H lines**: a row of picture 1 and picture 2, separated by a white space.
+-   Line 1: five ints separated by a space, **W** **H** **t1** **t2** **t3**
+-   Next **H** lines: a row of picture 1 and picture 2, separated by a white
+    space
 
 ## Output
 
-**H lines** for the state of the sky at **t3**
+-   **H** lines: the state of the sky at **t3**
 
 ## Constraints
 
-0 &lt; **W** &leq; **H** &leq; 20 \
-0 &leq; **t1** &lt; **t2** &leq; **t3** &leq; 10000
+-   0 &lt; **W** &leq; **H** &leq; 20
+-   0 &leq; **t1** &lt; **t2** &leq; **t3** &leq; 10000

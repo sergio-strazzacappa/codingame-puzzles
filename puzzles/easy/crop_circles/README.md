@@ -24,11 +24,11 @@ the diameter is 13.
 **NOTES**:
 
 -   Some Crop-Circles will not be fully in the Farming-Field, but all centers
-    will be.
--   To be clear, a circle includes its circumference.
+    will be
+-   To be clear, a circle includes its circumference
 -   There are advanced ways to determine a circle (such as _Bresenham's Circle
     Algorithm_). Do **not** use them; stick with what you learned in elementary
-    school.
+    school
 
 Mostly, Crop-Circles are made by mowing; so if no other instructions are given
 that's what you'll do.
@@ -52,13 +52,13 @@ or the Cattle Mutilation Division.
 
 ## Input
 
-A single string describing what Crop-Circles to make
+-   A single string describing what Crop-Circles to make
 
 ## Output
 
-The 19-wide x 25-high Farming-Field after it has been Crop-Circled. \
-The only characters allowed are **{}** and spaces
+-   The 19-wide x 25-high Farming-Field after it has been Crop-Circled. The only
+    characters allowed are **{}** and spaces
 
 ## Constraints
 
-There will be one or more Crop-Circles
+-   There will be one or more Crop-Circles
