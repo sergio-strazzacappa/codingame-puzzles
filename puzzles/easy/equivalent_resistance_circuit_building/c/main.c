@@ -1,26 +1,38 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <ctype.h>
 
-struct Resistor {
+typedef struct resistor {
     char name[11];
     int r;
-};
+} Resistor;
 
-struct Symbol {
+typedef struct symbol {
     char c;
     double d;
-};
+} Symbol;
 
-void print_stack(struct Symbol stack[], int n);
+int n;
+Resistor *resistors;
+char circuit[121];
+
+void read_input();
+void solve();
+void print_stack(Symbol stack[], int n);
 
 int main() {
-    int n;
+    read_input();
+    solve();
+    free(resistors);
+
+    return 0;
+}
+
+void read_input() {
     scanf("%d", &n);
 
-    struct Resistor resistors[n];
-    struct Symbol stack[1000];
-    int top = 0;
+    resistors = (Resistor *)malloc(sizeof(Resistor) * n);
 
     for (int i = 0; i < n; i++) {
         char name[11];
@@ -29,28 +41,30 @@ int main() {
         scanf("%s%d", name, &r);
         fgetc(stdin);
 
-        struct Resistor res;
+        Resistor res;
         strcpy(res.name, name);
         res.r = r;
 
         resistors[i] = res;
     }
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
         fprintf(stderr, "[DEBUG] %s - %d\n", resistors[i].name, resistors[i].r);
-    }
     fprintf(stderr, "\n");
 
-    char circuit[121];
     scanf("%[^\n]", circuit);
+}
 
+void solve() {
+    Symbol stack[1000];
+    int top = 0;
     int index = 0;
     char name[11] = "";
     double result = 0;
 
     for (int i = 0; i < strlen(circuit); i++) {
         if (circuit[i] == '(' || circuit[i] == '[') {
-            struct Symbol s;
+            Symbol s;
             s.c = circuit[i];
             s.d = -1;
             stack[top] = s;
@@ -64,7 +78,7 @@ int main() {
             name[index] = '\0';
             for (int j = 0; j < n; j++) {
                 if (strcmp(name, resistors[j].name) == 0) {
-                    struct Symbol s;
+                    Symbol s;
                     s.c = '-';
                     s.d = resistors[j].r;
                     stack[top] = s;
@@ -99,15 +113,16 @@ int main() {
 
     printf("%0.1f\n", result);
 
-    return 0;
 }
 
-void print_stack(struct Symbol stack[], int n) {
+void print_stack(Symbol stack[], int n) {
     fprintf(stderr, "[DEBUG] THE STACK\n");
     fprintf(stderr, "[DEBUG] ---------\n");
 
     for (int i = 0; i < n; i++) {
-        if (stack[i].c != '-') fprintf(stderr, "[DEBUG] %c\n", stack[i].c);
-        if (stack[i].d != -1) fprintf(stderr, "[DEBUG] %0.1f\n", stack[i].d);
+        if (stack[i].c != '-')
+            fprintf(stderr, "[DEBUG] %c\n", stack[i].c);
+        if (stack[i].d != -1)
+            fprintf(stderr, "[DEBUG] %0.1f\n", stack[i].d);
     }
 }
