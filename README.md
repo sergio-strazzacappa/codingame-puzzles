@@ -60,9 +60,17 @@
 
 [**C**]
 
+#### <p class="easy"> Darts Checkout Routes </p>
+
+[**C**]
+
 #### <p class="easy"> Defibrillators </p>
 
 [**C** - **C++** - **Java** - **Javascript**]
+
+#### <p class="easy"> Dungeons And Maps </p>
+
+[**C**]
 
 #### <p class="easy"> Encryption/Decryption Of Enigma Machine </p>
 
@@ -71,6 +79,14 @@
 #### <p class="easy"> Equivalent Resistance, Circuit Building </p>
 
 [**C** - **C++**]
+
+#### <p class="easy"> Fix The Networks </p>
+
+[**C**]
+
+#### <p class="easy"> Folding Paper </p>
+
+[**C**]
 
 #### <p class="easy"> Ghost Legs </p>
 
