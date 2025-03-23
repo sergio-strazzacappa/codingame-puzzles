@@ -14,16 +14,16 @@ indicate steep terrain which cannot be traversed carrying your raft. Determine
 
 ## Input
 
-**Line 1**: An odd integer **N** for the size of the map \
-**Next N lines**: Space-separated integers for the **elevation** of each plot
-(of which there are **N** in the row)
+-   Line 1: An odd integer **N** for the size of the map
+-   Next **N** lines: Space-separated integers for the **elevation** of each
+    plot (of which there are **N** in the row)
 
 ## Output
 
-**Line 1**: **yes** if the ocean is reachable, otherwise **no**
+-   Line 1: **yes** if the ocean is reachable, otherwise **no**
 
 ## Constraints
 
-2 &lt; N &lt; 20 \
-**N** is odd \
-0 &leq; **elevation** &lt; 10
+-   2 &lt; N &lt; 20
+-   **N** is odd
+-   0 &leq; **elevation** &lt; 10

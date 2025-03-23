@@ -96,6 +96,10 @@
 
 [**Bash** - **C** - **C++** - **Java** - **Javascript**]
 
+#### <p class="easy"> Island Escape </p>
+
+[**C**]
+
 #### Logic Gates
 
 1.  C++
