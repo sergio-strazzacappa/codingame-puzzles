@@ -100,9 +100,9 @@
 
 [**C**]
 
-#### Logic Gates
+#### <p class="easy"> Logic Gates </p>
 
-1.  C++
+[**C** - **C++**]
 
 #### <p class="easy"> Longest Coast </p>
 
