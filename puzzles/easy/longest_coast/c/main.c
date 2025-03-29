@@ -1,47 +1,51 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 
-struct Cell {
+typedef struct cell {
     int row;
     int col;
     char content;
     bool visited;
-};
+} Cell;
 
-void solve(struct Cell grid[], int size);
-int bfs(struct Cell grid[], int size, struct Cell root);
-void debug(struct Cell grid[], int size);
+int size;
+Cell *grid;
+
+void solve();
+int bfs(Cell root);
+void debug();
 
 int main() {
-    int n; 
-    scanf("%d", &n);
+    scanf("%d", &size);
     fgetc(stdin);
 
-    struct Cell grid[n * n];
+    grid = (Cell *)malloc(sizeof(Cell) * size * size);
 
-    for (int i = 0; i < n; i++) {
-        char row[n + 1];
+    for (int i = 0; i < size; i++) {
+        char row[size + 1];
         scanf("%[^\n]", row);
         fgetc(stdin);
 
-        for (int j = 0; j < n; j++) {
-            struct Cell c = {
+        for (int j = 0; j < size; j++) {
+            Cell c = {
                 .row = i, 
                 .col = j, 
                 .content = row[j],
-                .visited = false };
-
-            grid[i * n + j] = c;
+                .visited = false
+            };
+            grid[i * size + j] = c;
         }
     }
 
-    //debug(grid, n);
-    solve(grid, n);
+    //debug();
+    solve();
+    free(grid);
 
     return 0;
 }
 
-void solve(struct Cell grid[], int size) {
+void solve() {
     int max_coast = 0;
     int max_index = 1;
     int current_index = 0;
@@ -49,7 +53,7 @@ void solve(struct Cell grid[], int size) {
     for (int i = 0; i < size * size; i++) {
         if (grid[i].content == '#' && !grid[i].visited) {
             // start an island and the block was not visited
-            int coast = bfs(grid, size, grid[i]);
+            int coast = bfs(grid[i]);
             current_index++;
 
             if (coast > max_coast) {
@@ -61,11 +65,11 @@ void solve(struct Cell grid[], int size) {
     printf("%d %d\n", max_index, max_coast);
 }
 
-int bfs(struct Cell grid[], int size, struct Cell root) {
+int bfs(Cell root) {
     fprintf(stderr, "[DEBUG] Starting BFS\n");
 
     int coast_length = 0;
-    struct Cell q[size * size];
+    Cell q[size * size];
     int head = 0;
     int tail = 0;
     q[tail] = root;
@@ -73,7 +77,7 @@ int bfs(struct Cell grid[], int size, struct Cell root) {
     grid[root.row * size + root.col].visited = true;
 
     while (head != tail) { // q is not empty
-        struct Cell current = q[head];
+        Cell current = q[head];
 
         fprintf(stderr, "[DEBUG] head = %d tail = %d\n", head, tail);
         fprintf(stderr, "[DEBUG] current(%d %d %c)\n", current.row, current.col, current.content);
@@ -150,7 +154,7 @@ int bfs(struct Cell grid[], int size, struct Cell root) {
     return coast_length;
 }
 
-void debug(struct Cell grid[], int size) {
+void debug() {
     fprintf(stderr, "[DEBUG]\n");
     
     for (int i = 0; i < size * size; i++) {
