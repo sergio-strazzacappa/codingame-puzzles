@@ -24,6 +24,10 @@
 
 ### <p class="easy"> **Easy** </p>
 
+#### <p class="easy"> 1000000000D World </p>
+
+[**C**]
+
 #### <p class="easy"> 1D Spreadsheet </p>
 
 [**C** - **C++**]
@@ -274,6 +278,10 @@
 ## Multiplayer
 
 ### Fall Challenge 2024
+
+[**C**]
+
+### Spring Challenge 2025
 
 [**C**]
 
