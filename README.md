@@ -112,14 +112,9 @@
 
 [**C**]
 
-#### Mars Lander - Episode 1
+#### <p class="easy"> Mars Lander - Episode 1 </p>
 
-1.  Bash
-2.  C
-3.  C++
-4.  Java
-5.  Javascript
-6.  Python
+[**Bash** - **C** - **C++** - **Java** - **Javascript** - **Python**]
 
 #### MIME Type
 
