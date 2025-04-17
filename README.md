@@ -116,6 +116,10 @@
 
 [**Bash** - **C** - **C++** - **Java** - **Javascript** - **Python**]
 
+#### <p class="easy"> Merlin's Magic Square </p>
+
+[**C**]
+
 #### MIME Type
 
 1.  C++
