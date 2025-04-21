@@ -159,6 +159,10 @@
 5.  Javascript
 6.  Python
 
+#### <p class="easy"> Prefix Code </p>
+
+[**C**]
+
 #### Rectangle Partition
 
 1.  C++
