@@ -20,6 +20,7 @@ int last_index;
 
 void solve(char fname[]);
 int search(char ext[]);
+int cmp(const void *a, const void *b);
 void print_table();
 
 int main() {
@@ -41,21 +42,20 @@ int main() {
         table[last_index++] = m;
     }
 
+    qsort(table, last_index, sizeof(struct mime_data), cmp);
+
     for (int i = 0; i < q; i++) {
         char fname[FNAME_MAX_SIZE + 1];
         scanf("%s", fname);
-        fgetc(stdin);;
+        fgetc(stdin);
 
         solve(fname);
     }
 
-    //print_table();
     return 0;
 }
 
 void solve(char fname[]) {
-    //fprintf(stderr, "[DEBUG] Solve(%s)\n", fname);
-
     char *ext = (char *)malloc(sizeof(char) * EXT_MAX_SIZE + 1);
     int in_ext = 0;
     int j = 0;
@@ -95,12 +95,27 @@ void solve(char fname[]) {
 }
 
 int search(char ext[]) {
-    for (int i = 0; i < last_index; i++) {
-        if (strcmp(ext, table[i].extension) == 0) {
-            return i;
+    int low = 0;
+    int mid = 0;
+    int high = last_index - 1;
+
+    while (low <= high) {
+        mid = low + (high - low) / 2;
+        if (strcmp(ext, table[mid].extension) > 0) {
+            low = mid + 1;
+        } else if (strcmp(ext, table[mid].extension) < 0) {
+            high = mid - 1;
+        } else {
+            return mid;
         }
     }
     return -1;
+}
+
+int cmp(const void *a, const void *b) {
+    return strcmp(
+        ((struct mime_data *)a)->extension,
+        ((struct mime_data *)b)->extension);
 }
 
 void print_table() {
