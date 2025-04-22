@@ -120,11 +120,9 @@
 
 [**C**]
 
-#### MIME Type
+#### <p class="easy"> MIME Type </p>
 
-1.  C++
-2.  Java
-3.  Javascript
+[**C** - **C++** - **Java** - **Javascript**]
 
 #### Moves In Maze
 
