@@ -212,6 +212,10 @@
 
 [**C**]
 
+#### <p class="easy"> Tile A Floor </p>
+
+[**C**]
+
 #### <p class="easy"> Triangle Toggle </p>
 
 [**C**]
