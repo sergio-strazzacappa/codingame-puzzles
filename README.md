@@ -124,9 +124,9 @@
 
 [**C** - **C++** - **Java** - **Javascript**]
 
-#### Moves In Maze
+#### <p class="easy"> Moves In Maze </p>
 
-1.  C++
+[**C** - **C++**]
 
 #### Onboarding
 
