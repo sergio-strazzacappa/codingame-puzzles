@@ -128,6 +128,10 @@
 
 [**C** - **C++**]
 
+#### <p class="easy"> Number Of Digits </p>
+
+[**C**]
+
 #### Onboarding
 
 1.  Bash

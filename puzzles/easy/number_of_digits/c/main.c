@@ -1,23 +1,22 @@
 #include <stdio.h>
 #include <math.h>
 
-int solve(int n, int k);
+int n; // upper bound
+int k; // number to find
+
+int solve();
 int left_most_digit(int n);
 int number_of_digits(int n);
 int bruteforce(int n, int k);
 
 int main() {
-    int solution, n, k;
-
     scanf("%d %d", &n, &k);
-
-    solution = solve(n, k);
-    printf("%d\n", solution);
+    printf("%d\n", solve());
 
     return 0;
 }
 
-int solve(int n, int k) {
+int solve() {
     if (n < 10 && n < k)
         return 0;
 
