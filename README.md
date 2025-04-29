@@ -264,6 +264,10 @@
 
 2.  C++
 
+#### <p class="medium"> Hexagonal Maze </p>
+
+[**C**]
+
 #### <p class="medium"> What The Brainfuck! </p>
 
 [**C**]
