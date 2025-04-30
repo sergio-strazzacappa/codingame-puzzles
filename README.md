@@ -22,115 +22,148 @@
 
 ## Puzzles
 
-### <p class="easy"> **Easy** </p>
+### Easy
 
-#### <p class="easy"> 1000000000D World </p>
+-   <p class="easy"> 1000000000D World </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> 1D Spreadsheet </p>
+-   <p class="easy"> 1D Spreadsheet </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> A Bit Of Accounting - Lettering </p>
+-   <p class="easy"> A Bit Of Accounting - Lettering </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Abcdefghijklmnopqrstuvwxyz </p>
+-   <p class="easy"> Abcdefghijklmnopqrstuvwxyz </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> ASCII Art </p>
+-   <p class="easy"> ASCII Art </p>
 
-[**C** - **C++** - **Java** - **Javascript** - **Python**]
+    -   C
+    -   C++
+    -   Java
+    -   Javascript
+    -   Python
 
-#### <p class="easy"> ASCII Art The Drunken Bishop Algorithm </p>
+-   <p class="easy"> ASCII Art The Drunken Bishop Algorithm </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Asteroids </p>
+-   <p class="easy"> Asteroids </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Card Counting When Easily Distracted </p>
+-   <p class="easy"> Card Counting When Easily Distracted </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Create _Turn Here_ Signs </p>
+-   <p class="easy"> Create _Turn Here_ Signs </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Crop-Circles </p>
+-   <p class="easy"> Crop-Circles </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Darts Checkout Routes </p>
+-   <p class="easy"> Darts Checkout Routes </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Defibrillators </p>
+-   <p class="easy"> Defibrillators </p>
 
-[**C** - **C++** - **Java** - **Javascript**]
+    -   C
+    -   C++
+    -   Java
+    -   Javascript
 
-#### <p class="easy"> Dungeons And Maps </p>
+-   <p class="easy"> Dungeons And Maps </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Encryption/Decryption Of Enigma Machine </p>
+-   <p class="easy"> Encryption/Decryption Of Enigma Machine </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Equivalent Resistance, Circuit Building </p>
+-   <p class="easy"> Equivalent Resistance, Circuit Building </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Fix The Networks </p>
+-   <p class="easy"> Fix The Networks
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Folding Paper </p>
+-   <p class="easy"> Folding Paper </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Ghost Legs </p>
+-   <p class="easy"> Ghost Legs </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Horse Racing Duals </p>
+-   <p class="easy"> Horse Racing Duals </p>
 
-[**Bash** - **C** - **C++** - **Java** - **Javascript**]
+    -   Bash
+    -   C
+    -   C++
+    -   Java
+    -   Javascript
 
-#### <p class="easy"> Island Escape </p>
+-   <p class="easy"> Island Escape </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Logic Gates </p>
+-   <p class="easy"> Logic Gates </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Longest Coast </p>
+-   <p class="easy"> Longest Coast </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> Mars Lander - Episode 1 </p>
+-   <p class="easy"> Mars Lander - Episode 1 </p>
 
-[**Bash** - **C** - **C++** - **Java** - **Javascript** - **Python**]
+    -   Bash
+    -   C
+    -   C++
+    -   Java
+    -   Javascript
+    -   Python
 
-#### <p class="easy"> Merlin's Magic Square </p>
+-   <p class="easy"> Merlin's Magic Square </p>
 
-[**C**]
+    -   C
 
-#### <p class="easy"> MIME Type </p>
+-   <p class="easy"> MIME Type </p>
 
-[**C** - **C++** - **Java** - **Javascript**]
+    -   C
+    -   C++
+    -   Java
+    -   Javascript
 
-#### <p class="easy"> Moves In Maze </p>
+-   <p class="easy"> Moves In Maze </p>
 
-[**C** - **C++**]
+    -   C
+    -   C++
 
-#### <p class="easy"> Number Of Digits </p>
+-   <p class="easy"> Number Of Digits </p>
 
-[**C**]
+    -   C
+
+-   <p class="easy"> Offset Arrays </p>
+
+    -   C
 
 #### Onboarding
 
