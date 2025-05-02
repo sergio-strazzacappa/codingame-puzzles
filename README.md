@@ -26,152 +26,152 @@
 
 -   <p class="easy"> 1000000000D World </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> 1D Spreadsheet </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> A Bit Of Accounting - Lettering </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Abcdefghijklmnopqrstuvwxyz </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> ASCII Art </p>
 
-    -   C
-    -   C++
-    -   Java
-    -   Javascript
-    -   Python
+    1.  C
+    2.  C++
+    3.  Java
+    4.  Javascript
+    5.  Python
 
 -   <p class="easy"> ASCII Art The Drunken Bishop Algorithm </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Asteroids </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Card Counting When Easily Distracted </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Create _Turn Here_ Signs </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Crop-Circles </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Darts Checkout Routes </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Defibrillators </p>
 
-    -   C
-    -   C++
-    -   Java
-    -   Javascript
+    1.  C
+    2.  C++
+    3.  Java
+    4.  Javascript
 
 -   <p class="easy"> Dungeons And Maps </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Encryption/Decryption Of Enigma Machine </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Equivalent Resistance, Circuit Building </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Fix The Networks
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Folding Paper </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Ghost Legs </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Horse Racing Duals </p>
 
-    -   Bash
-    -   C
-    -   C++
-    -   Java
-    -   Javascript
+    1.  Bash
+    2.  C
+    3.  C++
+    4.  Java
+    5.  Javascript
 
 -   <p class="easy"> Island Escape </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Logic Gates </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Longest Coast </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Mars Lander - Episode 1 </p>
 
-    -   Bash
-    -   C
-    -   C++
-    -   Java
-    -   Javascript
-    -   Python
+    1.  Bash
+    2.  C
+    3.  C++
+    4.  Java
+    5.  Javascript
+    6.  Python
 
 -   <p class="easy"> Merlin's Magic Square </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> MIME Type </p>
 
-    -   C
-    -   C++
-    -   Java
-    -   Javascript
+    1.  C
+    2.  C++
+    3.  Java
+    4.  Javascript
 
 -   <p class="easy"> Moves In Maze </p>
 
-    -   C
-    -   C++
+    1.  C
+    2.  C++
 
 -   <p class="easy"> Number Of Digits </p>
 
-    -   C
+    1.  C
 
 -   <p class="easy"> Offset Arrays </p>
 
-    -   C
+    1.  C
 
-#### Onboarding
+-   <p class="easy"> Onboarding </p>
 
-1.  Bash
-2.  C
-3.  C++
-4.  Java
-5.  Javascript
+    1.  Bash
+    2.  C
+    3.  C++
+    4.  Java
+    5.  Javascript
 
 #### <p class="easy"> Pachinko Jackpot </p>
 
