@@ -173,10 +173,6 @@
     4.  Java
     5.  Javascript
 
-#### <p class="easy"> Pachinko Jackpot </p>
-
-[**C**]
-
 #### <p class="easy"> Periodic Table Spelling </p>
 
 [**C**]
