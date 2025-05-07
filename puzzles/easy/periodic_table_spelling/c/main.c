@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include <ctype.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 #define CANT_ELEMENTS 118
 
@@ -41,7 +41,6 @@ int main() {
     char word[31];
     scanf("%[^\n]", word);
     create_tree(word);
-    //print_tree(root);
 
     return 0;
 }
@@ -99,19 +98,21 @@ struct Node* create_node(char data[], struct Node* parent) {
 }
 
 struct Node* search_parent(struct Node* n, int length) {
-    if (n == NULL) {
+    if (n == NULL)
         return NULL;
-    }
 
+    struct Node *p;
     if (n->length == length && !n->visited) {
         n->visited = true;
-        return n;
+        p = n;
     } else {
-        struct Node *p = search_parent(n->left, length);
-        if (p == NULL) {
-            return search_parent(n->right, length);
-        }
+        p = search_parent(n->left, length);
+
+        if (p == NULL)
+            p = search_parent(n->right, length);
     }
+
+    return p;
 }
 
 void solve(struct Node *n, char solution[], int index, int word_length) {
@@ -133,11 +134,9 @@ void solve(struct Node *n, char solution[], int index, int word_length) {
 }
 
 bool match(char string[3]) {
-    for (int i = 0; i < CANT_ELEMENTS; i++) {
-        if (strcmp(string, elements[i]) == 0) {
+    for (int i = 0; i < CANT_ELEMENTS; i++)
+        if (strcmp(string, elements[i]) == 0)
             return true;
-        }
-    }
     return false;
 }
 

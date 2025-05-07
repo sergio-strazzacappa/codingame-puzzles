@@ -173,9 +173,9 @@
     4.  Java
     5.  Javascript
 
-#### <p class="easy"> Periodic Table Spelling </p>
+-   <p class="easy"> Periodic Table Spelling </p>
 
-[**C**]
+    1.  C
 
 #### <p class="easy"> Playing Card Odds </p>
 
