@@ -2,10 +2,10 @@
 
 ## Bronze
 
--   2D Arrays (10/15%)
+-   2D Arrays (11/16%)
 -   Arithmetic (1/3%)
 -   Arrays (10/26%)
--   Conditions (16/21%)
+-   Conditions (17/23%)
 -   Data Types (1/17%)
 -   Hash Tables (1/20%)
 -   Lists (5/26%)
