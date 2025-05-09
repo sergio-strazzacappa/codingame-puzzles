@@ -9,74 +9,62 @@
  * suits = C D H S
  */ 
 
-void dump(char a[], int n);
+int r;
+int s;
+char cards[N];
+
 void remove_cards(char a[], int n, char removed[]);
-float seek_cards(char a[], int n, char sought[]);
-int is_rank(char c);
 int is_suit(char c);
+int is_rank(char c);
+float seek_cards(char a[], int n, char sought[]);
 int get_index(char c);
 int total(char a[], int n);
+void dump(char a[], int n);
 
 int main() {
-    int r, s;
-    float percentage;
-    char removed[16], sought[16], cards[N];
     scanf("%d%d", &r, &s);
     fgetc(stdin);
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++)
         cards[i] = 1;
-    }
 
+    char removed[16];
     for (int i = 0; i < r; i++) {
         scanf("%[^\n]", removed);
         fgetc(stdin);
         remove_cards(cards, N, removed);
-        //dump(cards, N);
-        //printf("Total cards: %d\n", total(cards, N));
     }
 
-    percentage = 0;
+    char sought[16];
+    float percentage = 0;
     for (int i = 0; i < s; i++) {
         scanf("%[^\n]", sought);
         fgetc(stdin);
         percentage += seek_cards(cards, N, sought);
     }
 
-    //dump(cards, N);
-
     printf("%.0f%%\n", round(percentage));
 
     return 0;
 }
 
-void dump(char a[], int n) {
-    for (int i = 0; i < n; i++) {
-        if (a[i] == 0) printf("O");
-        if (a[i] == 1) printf("X");
-        if (a[i] == 2) printf("F");
-        if (i < n - 1)          printf(" ");
-        if ((i + 1) % 13 == 0)  printf("\n");
-    }
-}
-
 void remove_cards(char a[], int n, char removed[]) {
     char ranks[13], suits[4];
-    int r_index, s_index;
-    //printf("Remove %s\n", removed);
     
-    r_index = 0;
-    s_index = 0;
+    int r_index = 0;
+    int s_index = 0;
     for (int i = 0; i < strlen(removed); i++) {
         if (is_rank(removed[i])) {
             ranks[r_index] = removed[i];
             r_index++;
         }
+
         if (is_suit(removed[i])) {
             suits[s_index] = removed[i];
             s_index++;
         }
     }
+
     if (s_index == 0) {
         // remove every rank found
         for (int i = 0; i < r_index; i++) {
@@ -100,15 +88,20 @@ void remove_cards(char a[], int n, char removed[]) {
     }
 }
 
+int is_suit(char c) {
+    return c == 'C' || c == 'D' || c == 'H' || c == 'S';
+}
+
+int is_rank(char c) {
+    return !is_suit(c);
+}
+
 float seek_cards(char a[], int n, char sought[]) {
     char ranks[13], suits[4];
-    int r_index, s_index;
-    float p;
-    //printf("Seek %s\n", sought);
     
-    r_index = 0;
-    s_index = 0;
-    p = 0;
+    int r_index = 0;
+    int s_index = 0;
+    float p = 0;
     for (int i = 0; i < strlen(sought); i++) {
         if (is_rank(sought[i])) {
             ranks[r_index] = sought[i];
@@ -119,6 +112,7 @@ float seek_cards(char a[], int n, char sought[]) {
             s_index++;
         }
     }
+
     if (s_index == 0) {
         // seek every rank found
         for (int i = 0; i < r_index; i++) {
@@ -152,14 +146,6 @@ float seek_cards(char a[], int n, char sought[]) {
     return p;
 }
 
-int is_rank(char c) {
-    return !is_suit(c);
-}
-
-int is_suit(char c) {
-    return c == 'C' || c == 'D' || c == 'H' || c == 'S';
-}
-
 int get_index(char c) {
     if (c == 'A')               return 0;
     if (c >= '2' && c <= '9')   return c - '0' - 1;
@@ -178,8 +164,21 @@ int get_index(char c) {
 
 int total(char a[], int n) {
     int t = 0;
+
     for (int i = 0; i < n; i++) {
-        if (a[i] == 1 || a[i] == 2) t++;
+        if (a[i] == 1 || a[i] == 2)
+            t++;
     }
+
     return t;
+}
+
+void dump(char a[], int n) {
+    for (int i = 0; i < n; i++) {
+        if (a[i] == 0)          printf("O");
+        if (a[i] == 1)          printf("X");
+        if (a[i] == 2)          printf("F");
+        if (i < n - 1)          printf(" ");
+        if ((i + 1) % 13 == 0)  printf("\n");
+    }
 }

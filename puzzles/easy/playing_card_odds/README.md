@@ -4,7 +4,8 @@
 
 A standard 52-card **deck** consists of every combination of 13 **ranks** and 4
 **suits**. Ranks are **2** through **9**, **T** (ten), **J** (jack), **Q**
-(queen), **K** (king), and **A** (ace). Suits are **C** (clubs), **D** (diamonds), **H** (hearts), and **S** (spades).
+(queen), **K** (king), and **A** (ace). Suits are **C** (clubs), **D**
+(diamonds), **H** (hearts), and **S** (spades).
 
 A **descriptive classification** is a combination of ranks, suits or both, where
 any of the given ranks must match, and any of the given suits must match. For
@@ -30,16 +31,17 @@ ways, only shows up once.
 
 ## Input
 
-**Line 1:** Two space-separated integers **R** and **S** for the number of
-descriptive classifications that follows  
-**Next R lines:** A string **removed** indicating cards taken out of the deck  
-**Next S lines:** A string **sought** indicating cards wanted to match
+-   Line 1: Two space-separated integers **R** and **S** for the number of
+    descriptive classifications that follows
+-   Next **R** lines: A string **removed** indicating cards taken out of the
+    deck
+-   Next **S** lines: A string **sought** indicating cards wanted to match
 
 ## Output
 
-**Line 1:** An integer **percentage** inmediately follower by **%**
+-   Line 1: An integer **percentage** inmediately follower by **%**
 
 ## Constraints
 
-0 ≤ **R** ≤ 10  
-0 ≤ **S** ≤ 10
+-   0 &leq; **R** &leq; 10
+-   0 &leq; **S** &leq; 10

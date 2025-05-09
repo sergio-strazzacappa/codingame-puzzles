@@ -177,9 +177,9 @@
 
     1.  C
 
-#### <p class="easy"> Playing Card Odds </p>
+-   <p class="easy"> Playing Card Odds </p>
 
-[**C**]
+    1.  C
 
 #### Power Of Thor - Episode 1
 
