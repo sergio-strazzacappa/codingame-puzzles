@@ -88,6 +88,10 @@
 
     1.  C
 
+-   <p class="easy"> Embedded Chessboards </p>
+
+    1.  C
+
 -   <p class="easy"> Encryption/Decryption Of Enigma Machine </p>
 
     1.  C
