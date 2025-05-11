@@ -185,14 +185,14 @@
 
     1.  C
 
-#### Power Of Thor - Episode 1
+-   <p class="easy"> Power Of Thor - Episode 1 </p>
 
-1.  Bash
-2.  C
-3.  C++
-4.  Java
-5.  Javascript
-6.  Python
+    1.  Bash
+    2.  C
+    3.  C++
+    4.  Java
+    5.  Javascript
+    6.  Python
 
 #### <p class="easy"> Prefix Code </p>
 

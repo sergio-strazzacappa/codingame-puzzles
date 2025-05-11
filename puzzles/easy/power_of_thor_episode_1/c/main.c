@@ -1,9 +1,20 @@
 #include <stdio.h>
 
-int main() {
-    int light_x, light_y, initial_tx, initial_ty;
-    scanf("%d%d%d%d", &light_x, &light_y, &initial_tx, &initial_ty);
+int light_x;
+int light_y;
+int initial_tx;
+int initial_ty;
 
+void solve();
+
+int main() {
+    scanf("%d%d%d%d", &light_x, &light_y, &initial_tx, &initial_ty);
+    solve();
+
+    return 0;
+}
+
+void solve() {
     while (1) {
         int remianing_turns;
         scanf("%d", &remianing_turns);
@@ -26,5 +37,4 @@ int main() {
         }
         printf("\n");
     }
-    return 0;
 }
