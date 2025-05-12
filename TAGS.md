@@ -25,7 +25,7 @@
 -   Ascii Art (7/14%)
 -   Brute-force (1/5%)
 -   Card Games (2/20%)
--   Chess (1/8%)
+-   Chess (2/15%)
 -   Coordinates (1/14%)
 -   Dependency Graphs (1/33%)
 -   Distances (2/11%)
@@ -49,6 +49,7 @@
 ## Gold
 
 -   A\* (1/25%)
+-   Backtracking (1/3%)
 -   Bin Packing (1/33%)
 -   Bitboarding (1/10%)
 -   BFS (7/21%)
