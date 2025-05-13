@@ -136,6 +136,10 @@
 
     1.  C
 
+-   <p class="easy"> Lumen </p>
+
+    1.  C
+
 -   <p class="easy"> Mars Lander - Episode 1 </p>
 
     1.  Bash
