@@ -198,9 +198,9 @@
     5.  Javascript
     6.  Python
 
-#### <p class="easy"> Prefix Code </p>
+-   <p class="easy"> Prefix Code </p>
 
-[**C**]
+    1.  C
 
 #### <p class="easy"> Production Pipeline </p>
 
