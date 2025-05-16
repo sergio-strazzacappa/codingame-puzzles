@@ -202,9 +202,9 @@
 
     1.  C
 
-#### <p class="easy"> Production Pipeline </p>
+-   <p class="easy"> Production Pipeline </p>
 
-[**C**]
+    1.  C
 
 #### Rectangle Partition
 
