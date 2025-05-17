@@ -69,6 +69,10 @@
     1.  C
     2.  C++
 
+-   <p class="easy"> Compiler CG86 (Easy Version) </p>
+
+    1.  C
+
 -   <p class="easy"> Crop-Circles </p>
 
     1.  C
