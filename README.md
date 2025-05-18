@@ -60,6 +60,10 @@
 
     1.  C
 
+-   <p class="easy"> Bijective Numeration </p>
+
+    1.  C
+
 -   <p class="easy"> Card Counting When Easily Distracted </p>
 
     1.  C
