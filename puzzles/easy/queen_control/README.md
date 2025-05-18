@@ -7,7 +7,7 @@ important to **control** a large amount of these squares to gain the upper hand
 on the opponent. A square is said to be controlled when it is in the range of
 movement of a chess piece.
 
-The chess piece that can control the most squares is the **queen**. It can move
+The chess piece that can control the most squares is **the queen**. It can move
 on any square vertically, horizontally and diagonally.
 
 **Your mission**: Create a program able to calculate the number of squares
@@ -34,3 +34,7 @@ A square is considered to be controlled when the queen can move to it.
 
 -   Line 1: An integer corresponding to the number of squares controlled by the
     queen
+
+## Constraints
+
+-   None

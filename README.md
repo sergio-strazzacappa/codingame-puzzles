@@ -210,6 +210,10 @@
 
     1.  C
 
+-   <p class="easy"> Queen Control </p>
+
+    1.  C
+
 #### Rectangle Partition
 
 1.  C++

@@ -8,11 +8,19 @@ enum Color  {
 enum Color color;
 char board[8][8];
 
+void init();
 void solve();
 int valid_move(int x, int y, int *stop);
 void print_board();
 
 int main() {
+    init();
+    solve();
+
+    return 0;
+}
+
+void init() {
     char c[6];
     scanf("%[^\n]", c);
     fgetc(stdin);
@@ -27,14 +35,9 @@ int main() {
         scanf("%[^\n]", line);
         fgetc(stdin);
 
-        for (int x = 0; x < 8; x++) {
+        for (int x = 0; x < 8; x++)
             board[y][x] = line[x];
-        }
     }
-
-    solve();
-
-    return 0;
 }
 
 void solve() {
