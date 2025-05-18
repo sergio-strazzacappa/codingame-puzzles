@@ -218,10 +218,11 @@
 
     1.  C
 
-#### Rectangle Partition
+-   <p class="easy"> Rectangle Partition </p>
 
-1.  C++
-2.  Javascript
+    1.  C
+    2.  C++
+    3.  Javascript
 
 #### Retro Typewriter Art
 
