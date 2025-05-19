@@ -17,6 +17,7 @@
 -   Sequences (1/11%)
 -   Sets (1/13%)
 -   Sorting (1/7%)
+-   Stack (1/11%)
 -   String Manipulation (7/10%)
 -   Strings (10/16%)
 

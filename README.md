@@ -68,14 +68,18 @@
 
     1.  C
 
+-   <p class="easy"> Compiler CG86 (Easy Version) </p>
+
+    1.  C
+
+-   <p class="easy"> Container Terminal </p>
+
+    1.  C
+
 -   <p class="easy"> Create _Turn Here_ Signs </p>
 
     1.  C
     2.  C++
-
--   <p class="easy"> Compiler CG86 (Easy Version) </p>
-
-    1.  C
 
 -   <p class="easy"> Crop-Circles </p>
 
