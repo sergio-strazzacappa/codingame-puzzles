@@ -228,9 +228,10 @@
     2.  C++
     3.  Javascript
 
-#### Retro Typewriter Art
+-   <p class="easy"> Retro Typewriter Art </p>
 
-1.  C++
+    1.  C
+    2.  C++
 
 #### <p class="easy"> Rock Paper Scissors Lizard Spock </p>
 
