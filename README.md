@@ -233,6 +233,10 @@
     1.  C
     2.  C++
 
+-   <p class="easy"> Reverse Minesweeper </p>
+
+    1.  C
+
 #### <p class="easy"> Rock Paper Scissors Lizard Spock </p>
 
 [**C**]
