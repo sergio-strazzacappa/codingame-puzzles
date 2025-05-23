@@ -41,7 +41,7 @@
 -   **Lazy Evaluation (1/100%)**
 -   Mathematics (5/7%)
 -   Matrix Product (1/33%)
--   Number Theory (1/8%)
+-   Number Theory (2/14%)
 -   Optimization (2/17%)
 -   Physics (1/7%)
 -   Probability (2/20%)
@@ -58,7 +58,8 @@
 -   Binary Search (1/20%)
 -   Bitboarding (1/10%)
 -   BFS (8/24%)
--   Criptography (1/4%)
+-   Combinatorics (1/6%)
+-   Criptography (2/8%)
 -   DFS (4/17%)
 -   Dynamic Programming (1/3%)
 -   Flood Fill (3/13%)
