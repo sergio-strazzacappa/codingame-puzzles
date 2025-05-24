@@ -237,9 +237,9 @@
 
     1.  C
 
-#### <p class="easy"> Rock Paper Scissors Lizard Spock </p>
+-   <p class="easy"> Rock Paper Scissors Lizard Spock </p>
 
-[**C**]
+    1.  C
 
 #### <p class="easy"> Sign (Programming) Language </p>
 
