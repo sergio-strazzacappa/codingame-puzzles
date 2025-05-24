@@ -177,6 +177,10 @@
     1.  C
     2.  C++
 
+-   <p class="easy"> NATO-alphabet's Odd Uncles </p>
+
+    1.  C
+
 -   <p class="easy"> Number Of Digits </p>
 
     1.  C

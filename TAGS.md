@@ -4,8 +4,8 @@
 
 -   2D Arrays (12/18%)
 -   Arithmetic (1/3%)
--   Arrays (11/28%)
--   Conditions (18/24%)
+-   Arrays (12/30%)
+-   Conditions (19/25%)
 -   Data Types (2/29%)
 -   Hash Tables (2/33%)
 -   Intervals (1/14%)
@@ -19,7 +19,7 @@
 -   Sets (1/13%)
 -   Sorting (1/7%)
 -   Stack (1/11%)
--   String Manipulation (7/10%)
+-   String Manipulation (8/12%)
 -   Strings (10/16%)
 
 ## Silver
@@ -66,6 +66,7 @@
 -   Maze (2/13%)
 -   Memoization (2/11%)
 -   Pathfinding (5/10%)
+-   Pattern Recognition (1/7%)
 -   Resource Management (1/14%)
 -   State Machine (3/25%)
 -   Tries (1/33%)
