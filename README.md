@@ -1,49 +1,29 @@
-<style>
-
-    .easy {
-        color: #00FF00;
-    }
-
-    .medium {
-        color: #FFCC00;
-    }
-
-    .hard {
-        color: #0000FF;
-    }
-
-    .very-hard {
-        color: #FF00FF;
-    }
-
-</style>
-
 # Codingame
 
 ## Puzzles
 
 ### Easy
 
--   <p class="easy"> 1000000000D World </p>
+-   **1000000000D World**
 
     1.  C
 
--   <p class="easy"> 1D Spreadsheet </p>
-
-    1.  C
-    2.  C++
-
--   <p class="easy"> A Bit Of Accounting - Lettering </p>
+-   **1D Spreadsheet**
 
     1.  C
     2.  C++
 
--   <p class="easy"> Abcdefghijklmnopqrstuvwxyz </p>
+-   **A Bit Of Accounting - Lettering**
 
     1.  C
     2.  C++
 
--   <p class="easy"> ASCII Art </p>
+-   **Abcdefghijklmnopqrstuvwxyz**
+
+    1.  C
+    2.  C++
+
+-   **ASCII Art**
 
     1.  C
     2.  C++
@@ -51,83 +31,83 @@
     4.  Javascript
     5.  Python
 
--   <p class="easy"> ASCII Art The Drunken Bishop Algorithm </p>
+-   **ASCII Art The Drunken Bishop Algorithm**
 
     1.  C
     2.  C++
 
--   <p class="easy"> Asteroids </p>
+-   **Asteroids**
 
     1.  C
 
--   <p class="easy"> Bijective Numeration </p>
+-   **Bijective Numeration**
 
     1.  C
 
--   <p class="easy"> Card Counting When Easily Distracted </p>
+-   **Card Counting When Easily Distracted**
 
     1.  C
 
--   <p class="easy"> Compiler CG86 (Easy Version) </p>
+-   **Compiler CG86 (Easy Version)**
 
     1.  C
 
--   <p class="easy"> Container Terminal </p>
+-   **Container Terminal**
 
     1.  C
 
--   <p class="easy"> Create _Turn Here_ Signs </p>
+-   **Create _Turn Here_ Signs**
 
     1.  C
     2.  C++
 
--   <p class="easy"> Crop-Circles </p>
+-   **Crop-Circles**
 
     1.  C
 
--   <p class="easy"> Darts Checkout Routes </p>
+-   **Darts Checkout Routes**
 
     1.  C
 
--   <p class="easy"> Defibrillators </p>
+-   **Defibrillators**
 
     1.  C
     2.  C++
     3.  Java
     4.  Javascript
 
--   <p class="easy"> Dungeons And Maps </p>
+-   **Dungeons And Maps**
 
     1.  C
 
--   <p class="easy"> Embedded Chessboards </p>
+-   **Embedded Chessboards**
 
     1.  C
 
--   <p class="easy"> Encryption/Decryption Of Enigma Machine </p>
-
-    1.  C
-    2.  C++
-
--   <p class="easy"> Equivalent Resistance, Circuit Building </p>
+-   **Encryption/Decryption Of Enigma Machine**
 
     1.  C
     2.  C++
 
--   <p class="easy"> Fix The Networks
-
-    1.  C
-
--   <p class="easy"> Folding Paper </p>
-
-    1.  C
-
--   <p class="easy"> Ghost Legs </p>
+-   **Equivalent Resistance, Circuit Building**
 
     1.  C
     2.  C++
 
--   <p class="easy"> Horse Racing Duals </p>
+-   **Fix The Networks**
+
+    1.  C
+
+-   **Folding Paper**
+
+    1.  C
+
+-   **Ghost Legs**
+
+    1.  C
+    2.  C++
+
+-   **Horse Racing Duals**
 
     1.  Bash
     2.  C
@@ -135,24 +115,24 @@
     4.  Java
     5.  Javascript
 
--   <p class="easy"> Island Escape </p>
+-   **Island Escape**
 
     1.  C
 
--   <p class="easy"> Logic Gates </p>
+-   **Logic Gates**
 
     1.  C
     2.  C++
 
--   <p class="easy"> Longest Coast </p>
+-   **Longest Coast**
 
     1.  C
 
--   <p class="easy"> Lumen </p>
+-   **Lumen**
 
     1.  C
 
--   <p class="easy"> Mars Lander - Episode 1 </p>
+-   **Mars Lander - Episode 1**
 
     1.  Bash
     2.  C
@@ -161,39 +141,39 @@
     5.  Javascript
     6.  Python
 
--   <p class="easy"> Merlin's Magic Square </p>
+-   **Merlin's Magic Square**
 
     1.  C
 
--   <p class="easy"> MIME Type </p>
+-   **MIME Type**
 
     1.  C
     2.  C++
     3.  Java
     4.  Javascript
 
--   <p class="easy"> Moves In Maze </p>
+-   **Moves In Maze**
 
     1.  C
     2.  C++
 
--   <p class="easy"> NATO-alphabet's Odd Uncles </p>
+-   **NATO-alphabet's Odd Uncles**
 
     1.  C
 
--   <p class="easy"> Number Of Digits </p>
+-   **Number Of Digits**
 
     1.  C
 
--   <p class="easy"> Object Insertion </p>
+-   **Object Insertion**
 
     1.  C
 
--   <p class="easy"> Offset Arrays </p>
+-   **Offset Arrays**
 
     1.  C
 
--   <p class="easy"> Onboarding </p>
+-   **Onboarding**
 
     1.  Bash
     2.  C
@@ -201,15 +181,15 @@
     4.  Java
     5.  Javascript
 
--   <p class="easy"> Periodic Table Spelling </p>
+-   **Periodic Table Spelling**
 
     1.  C
 
--   <p class="easy"> Playing Card Odds </p>
+-   **Playing Card Odds**
 
     1.  C
 
--   <p class="easy"> Power Of Thor - Episode 1 </p>
+-   **Power Of Thor - Episode 1**
 
     1.  Bash
     2.  C
@@ -218,34 +198,38 @@
     5.  Javascript
     6.  Python
 
--   <p class="easy"> Prefix Code </p>
+-   **Prefix Code**
 
     1.  C
 
--   <p class="easy"> Production Pipeline </p>
+-   **Production Pipeline**
 
     1.  C
 
--   <p class="easy"> Queen Control </p>
+-   **Queen Control**
 
     1.  C
 
--   <p class="easy"> Rectangle Partition </p>
+-   **Rectangle Partition**
 
     1.  C
     2.  C++
     3.  Javascript
 
--   <p class="easy"> Retro Typewriter Art </p>
+-   **Retro Typewriter Art**
 
     1.  C
     2.  C++
 
--   <p class="easy"> Reverse Minesweeper </p>
+-   **Reverse Minesweeper**
 
     1.  C
 
--   <p class="easy"> Rock Paper Scissors Lizard Spock </p>
+-   **Rock Paper Scissors Lizard Spock**
+
+    1.  C
+
+-   **Rocky Pohp's Concert Date**
 
     1.  C
 

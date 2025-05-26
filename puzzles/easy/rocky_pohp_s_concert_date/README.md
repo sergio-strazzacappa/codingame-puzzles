@@ -14,10 +14,10 @@ number.
 
 Rocky Pohp explains that he obtained the mysterious number in three steps:
 
-1.  **Concatenation**: He concatenated the year, month, and day of the concert to
-    form a number
-2.  **Factorization**: He decomposed this number into two factors **a** and **b**
-    that are as close as possible, meaning that the absolute difference
+1.  **Concatenation**: He concatenated the year, month, and day of the concert
+    to form a number
+2.  **Factorization**: He decomposed this number into two factors **a** and
+    **b** that are as close as possible, meaning that the absolute difference
     |**a** - **b**| is minimized
 3.  **Final number**: He obtained the mysterious number by concatenating **a**
     and **b**
@@ -25,7 +25,20 @@ Rocky Pohp explains that he obtained the mysterious number in three steps:
 Example:
 
 -   The date **2078-12-08** leads to the number **20781208**
--   The closest factorization is **20781208** = **4471** × **4648**
+-   The different factorizations of **20781208** are: **1** x **20781208**,
+    **2** x **10390604**, **4** x **5195302**, **7** x **2968744**,
+    **8** x **2597651**, **14** x **1484372**, **17** x **1222424**,
+    **28** x **742186**, **34** x **611212**, **56** x **371093**,
+    **68** x **305606**, **83** x **250376**, **119** x **174632**,
+    **136** x **152803**, **166** x **125188**, **238** x **87316**,
+    **263** x **79016**, **332** x **62594**, **476** x **43658**,
+    **526** x **39508**, **581** x **35768**, **664** x **31297**,
+    **952** x **21829**, **1052** x **19754**, **1162** x **17884**,
+    **1411** x **14728**, **1841** x **11288**, **2104** x **9877**,
+    **2324** x **8942**, **2822** x **7364**, **3682** x **5644**,
+    **4471** x **4648**
+-   The closest factorization is **20781208** = **4471** × **4648** because
+    |**4471** - **4648**| is the smallest difference
 -   The mysterious number is thus **44714648** (or **46484471**, which gives the
     same result lexicographically)
 
