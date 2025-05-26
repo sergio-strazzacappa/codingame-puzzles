@@ -185,6 +185,10 @@
 
     1.  C
 
+-   <p class="easy"> Object Insertion </p>
+
+    1.  C
+
 -   <p class="easy"> Offset Arrays </p>
 
     1.  C
