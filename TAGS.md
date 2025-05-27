@@ -20,7 +20,7 @@
 -   Sorting (1/7%)
 -   Stack (1/11%)
 -   String Manipulation (8/12%)
--   Strings (10/16%)
+-   Strings (11/17%)
 
 ## Silver
 
@@ -45,7 +45,7 @@
 -   Optimization (2/17%)
 -   Physics (1/7%)
 -   Probability (2/20%)
--   Radix (1/13%)
+-   Radix (2/25%)
 -   Simulation (4/10%)
 -   Strive For Simplicity (2/40%)
 -   Trigonometry (1/7%)
