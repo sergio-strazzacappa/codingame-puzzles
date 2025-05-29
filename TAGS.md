@@ -35,7 +35,7 @@
 -   Geometry (2/6%)
 -   Graph Traversal (1/17%)
 -   Graphs (3/10%)
--   Greedy Algorithms (1/5%)
+-   Greedy Algorithms (2/10%)
 -   Heuristic Search (1/25%)
 -   Interpreters (2/17%)
 -   **Lazy Evaluation (1/100%)**
