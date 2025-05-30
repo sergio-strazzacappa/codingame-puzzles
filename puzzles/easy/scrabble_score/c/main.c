@@ -27,24 +27,33 @@ typedef struct data {
     int score;
 } Data;
 
-int n;              // number of tiles in the tileset
-int *tileset[2];
-int width;          // width of the board
-int height;         // height of the board
-char *score;
-char *start_board;
-char *current_board;
+int n;                  // number of tiles in the tileset
+int *tileset[2];        // each character with thee corresponding score
+int rows;               // height of the board
+int cols;               // width of the board
+char **score;
+char **start_board;
+char **current_board;
 
+void init();
 void solve();
 int compute_score(Word w);
 int find(char c);
 int is_bonus();
-void clear();
+int cmp(const void *a, const void *b);
+void clean();
 void print_tileset();
-void print_board(char *title, char *board);
-int comp(const void *a, const void *b);
+void print_board(char *title, char **board);
 
 int main() {
+    init();
+    solve();
+    clean();
+
+    return 0;
+}
+
+void init() {
     scanf("%d", &n);
 
     tileset[0] = (int *)malloc(sizeof(int) * n);
@@ -54,51 +63,56 @@ int main() {
         char character[2];
         int score;
         scanf("%s%d", character, &score); 
-        *(tileset[0] + i) = character[0];
-        *(tileset[1] + i) = score;
+        tileset[0][i] = character[0];
+        tileset[1][i] = score;
     }
 
-    scanf("%d%d", &width, &height);
+    scanf("%d%d", &cols, &rows);
     fgetc(stdin);
 
-    score = (char *)malloc(sizeof(char) * height * width);
-    for (int y = 0; y < height; y++) {
-        // score system
+    // score system
+    score = (char **)malloc(sizeof(char *) * rows);
+
+    for (int y = 0; y < rows; y++) {
         char row[16];
         scanf("%[^\n]", row);
         fgetc(stdin);
 
-        for (int x = 0; x < width; x++) {
-            *(score + (y * width + x)) = row[x];
-        }
+        score[y] = (char *)malloc(sizeof(char) * cols);
+
+        for (int x = 0; x < cols; x++)
+            score[y][x] = row[x];
     }
 
-    start_board = (char *)malloc(sizeof(char) * height * width);
-    for (int y = 0; y < height; y++) {
+    // initial board
+    start_board = (char **)malloc(sizeof(char *) * rows);
+
+    for (int y = 0; y < rows; y++) {
         char row[16];
         scanf("%[^\n]", row);
         fgetc(stdin);
+
+        start_board[y] = (char *)malloc(sizeof(char) * cols);
         
-        for (int x = 0; x < width; x++) {
-            *(start_board + (y * width + x)) = row[x];
+        for (int x = 0; x < cols; x++) {
+            start_board[y][x] = row[x];
         }
     }
 
-    current_board = (char *)malloc(sizeof(char) * height * width);
-    for (int y = 0; y < height; y++) {
+    // current board
+    current_board = (char **)malloc(sizeof(char *) * rows);
+
+    for (int y = 0; y < rows; y++) {
         char row[16];
         scanf("%[^\n]", row);
         fgetc(stdin);
 
-        for (int x = 0; x < width; x++) {
-            *(current_board + (y * width + x)) = row[x];
+        current_board[y] = (char *)malloc(sizeof(char) * cols);
+
+        for (int x = 0; x < cols; x++) {
+            current_board[y][x] = row[x];
         }
     }
-
-    solve();
-    clear();
-
-    return 0;
 }
 
 void solve() {
@@ -108,12 +122,12 @@ void solve() {
     int number_words = 0;
     int total = 0;
 
-    for (int y = 0; y < height; y++) {
-        for (int x = 0; x < width; x++) {
+    for (int y = 0; y < rows; y++) {
+        for (int x = 0; x < cols; x++) {
             // check the start of a word
-            if (*(current_board + y * width + x) != '.') {
-                if (y == 0 || (y > 0 && *(current_board + (y - 1) * width + x) == '.')) {
-                    if (y == height - 1 || (y < height - 1 && *(current_board + (y + 1) * width + x) == '.'))
+            if (current_board[y][x] != '.') {
+                if (y == 0 || (y > 0 && current_board[y - 1][x] == '.')) {
+                    if (y == rows - 1 || (y < rows - 1 && current_board[y + 1][x] == '.'))
                         goto Horizontal;
 
                     // vertical word
@@ -122,17 +136,17 @@ void solve() {
                     int index = 0;
                     int temp_y = y;
 
-                    while (temp_y < height && *(current_board + temp_y * width + x) != '.') {
+                    while (temp_y < rows && current_board[temp_y][x] != '.') {
                         // still in the word
                         Cell c = {
-                            .character = *(current_board + temp_y * width + x),
+                            .character = current_board[temp_y][x],
                             .point = {.x = x, .y = temp_y},
                             .letter_mult = 1,
                             .word_mult = 1,
                             .compute = 0
                         };
 
-                        switch (*(score + temp_y * width + x)) {
+                        switch (score[temp_y][x]) {
                             case 'l':
                                 c.letter_mult = 2;
                                 break;
@@ -156,8 +170,8 @@ void solve() {
                 }
 
 Horizontal:
-                if (x == 0 || (x > 0 && *(current_board + y * width + (x - 1)) == '.')) {
-                    if (x == width - 1 || (x < width - 1 && *(current_board + y * width + (x + 1)) == '.'))
+                if (x == 0 || (x > 0 && current_board[y][x - 1] == '.')) {
+                    if (x == cols - 1 || (x < cols - 1 && current_board[y][x + 1] == '.'))
                         continue;
 
                     // horizontal word
@@ -166,17 +180,17 @@ Horizontal:
                     int index = 0;
                     int temp_x = x;
 
-                    while (temp_x < width && *(current_board + y * width + temp_x) != '.') {
+                    while (temp_x < cols && current_board[y][temp_x] != '.') {
                         // still in the word
                         Cell c = {
-                            .character = *(current_board + y * width + temp_x),
+                            .character = current_board[y][temp_x],
                             .point = {.x = temp_x, .y = y},
                             .letter_mult = 1,
                             .word_mult = 1,
                             .compute = 0
                         };
 
-                        switch (*(score + y * width + temp_x)) {
+                        switch (score[y][temp_x]) {
                             case 'l':
                                 c.letter_mult = 2;
                                 break;
@@ -208,18 +222,19 @@ Horizontal:
             int x = words[i].letter[j].point.x;
             int y =  words[i].letter[j].point.y;
 
-            if (words[i].letter[j].character != *(start_board + y * width + x)) {
+            if (words[i].letter[j].character != start_board[y][x]) {
                 compute = 1;
                 words[i].letter[j].compute = 1;
             }
         }
+
         if (compute) {
             int score = compute_score(words[i]);
             char word[words[i].size + 1];
 
-            for (int j = 0; j < words[i].size; j++) {
+            for (int j = 0; j < words[i].size; j++)
                 word[j] = words[i].letter[j].character;
-            }
+
             word[words[i].size] = '\0';
 
             Data d;
@@ -233,7 +248,7 @@ Horizontal:
         }
     }
 
-    qsort(solution, solution_index, sizeof(solution[0]), comp);
+    qsort(solution, solution_index, sizeof(solution[0]), cmp);
 
     for (int i = 0; i < solution_index; i++) {
         printf("%s %d\n", solution[i].word, solution[i].score);
@@ -264,17 +279,17 @@ int compute_score(Word w) {
 
 int find(char c) {
     for (int i = 0; i < n; i++) {
-        if (c == *(tileset[0] + i))
-            return *(tileset[1] + i);
+        if (c == tileset[0][i])
+            return tileset[1][i];
     }
     return -1;
 }
 
 int is_bonus() {
     int adds = 0;
-    for (int y = 0; y < height; y++) {
-        for (int x = 0; x < width; x++) {
-            if (*(start_board + y * width + x) != *(current_board + y * width + x)) {
+    for (int y = 0; y < rows; y++) {
+        for (int x = 0; x < cols; x++) {
+            if (start_board[y][x] != current_board[y][x]) {
                 adds++;
             }
         }
@@ -283,33 +298,42 @@ int is_bonus() {
     return (adds == 7);
 }
 
-void clear() {
+int cmp(const void *a, const void *b) {
+    return strcmp(*(const char **)a, *(const char **)b);
+}
+
+void clean() {
     free(tileset[0]);
     free(tileset[1]);
+
+    for (int y = 0; y < rows; y++)
+        free(score[y]);
     free(score);
+
+    for (int y = 0; y < rows; y++)
+        free(start_board[y]);
     free(start_board);
+
+    for (int y = 0; y < rows; y++)
+        free(current_board[y]);
     free(current_board);
 }
 
 void print_tileset() {
     printf("[DEBUG] Tileset\n");
     printf("[DEBUG] ----------\n");
-    for (int i = 0; i < n; i++) {
-        printf("[DEBUG] %c:%d\n", *(tileset[0] + i), *(tileset[1] + i));
-    }
+
+    for (int i = 0; i < n; i++)
+        printf("[DEBUG] %c:%d\n", tileset[0][i], tileset[1][i]);
 }
 
-void print_board(char *title, char *board) {
+void print_board(char *title, char **board) {
     printf("[DEBUG] %s\n", title);
     
-    for (int y = 0; y < height; y++) {
-        for (int x = 0; x < width; x++) {
-            printf("%c", *(board + (y * width + x)));
+    for (int y = 0; y < rows; y++) {
+        for (int x = 0; x < cols; x++) {
+            printf("%c", board[y][x]);
         }
         printf("\n");
     }
-}
-
-int comp(const void *a, const void *b) {
-    return strcmp(*(const char **)a, *(const char **)b);
 }

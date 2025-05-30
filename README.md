@@ -237,6 +237,10 @@
 
     1.  C
 
+-   **Scrabble Score**
+
+    1.  C
+
 #### <p class="easy"> Sign (Programming) Language </p>
 
 [**C**]
