@@ -2,7 +2,8 @@
 
 ## Goal
 
-You are in 1000000000D World! \
+You are in 1000000000D World!
+
 In 1000000000D World all vectors consist of **exactly** one billion integers.
 
 People of 1000000000D World are quite smart and they know that due to low
@@ -22,10 +23,10 @@ In **compressed form** it will become just:
 Given two 1000000000D vectors **A** and **B** in compressed form, **find the
 dot product of two vectors**.
 
-### Dot Product Definition
+## Dot Product Definition
 
-_For two vectors a = [a_1 a_2 ... a_n] and b = [b_1 b_2 ... b_n] dot product
-a • b = a_1 \* b_1 + a_2 \* b_2 + ... + a_n \* b_n_
+For two vectors a = [a_1 a_2 ... a_n] and b = [b_1 b_2 ... b_n] dot product
+**a • b** = a_1 \* b_1 + a_2 \* b_2 + ... + a_n \* b_n
 
 ## Input
 
