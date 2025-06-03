@@ -5,13 +5,13 @@
 -   2D Arrays (13/19%)
 -   Arithmetic (1/3%)
 -   Arrays (13/33%)
--   Conditions (20/26%)
+-   Conditions (21/27%)
 -   Data Types (2/29%)
 -   Hash Tables (2/33%)
 -   Intervals (1/14%)
 -   Lists (5/26%)
 -   Logic (4/13%)
--   Loops (27/23%)
+-   Loops (28/24%)
 -   Numbers (3/43%)
 -   Parsing (5/12%)
 -   Recursion (3/6%)
@@ -24,7 +24,7 @@
 
 ## Silver
 
--   Ascii Art (7/14%)
+-   Ascii Art (8/15%)
 -   Brute-force (1/5%)
 -   Card Games (2/20%)
 -   Chess (2/15%)
