@@ -5,6 +5,7 @@
 -   2D Arrays (13/19%)
 -   Arithmetic (1/3%)
 -   Arrays (13/33%)
+-   Condition **(1/100%)**
 -   Conditions (21/27%)
 -   Data Types (2/29%)
 -   Hash Tables (2/33%)
@@ -13,13 +14,13 @@
 -   Logic (4/13%)
 -   Loops (28/24%)
 -   Numbers (3/43%)
--   Parsing (5/12%)
+-   Parsing (6/14%)
 -   Recursion (3/6%)
 -   Sequences (1/11%)
 -   Sets (1/13%)
 -   Sorting (1/7%)
 -   Stack (1/11%)
--   String Manipulation (8/12%)
+-   String Manipulation (9/13%)
 -   Strings (11/17%)
 
 ## Silver
