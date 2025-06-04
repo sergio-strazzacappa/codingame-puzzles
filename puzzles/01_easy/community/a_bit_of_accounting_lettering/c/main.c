@@ -2,25 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct entry {
-    char label;
-    int invoice;
-    int payments[10];
-    int number_of_payments;
-} Entry;
-
 int n;
 int m;
 int *invoices;
 int *entries;
 
-void solve(Entry solution[], int *solution_index);
+void init();
+void solve();
 void remove_invoices(int invoices[], int invoices_paid[], int index, int *n);
+void clean();
 
 int main() {
-    Entry solution[10];
-    int solution_index = 0;
+    init();
+    solve();
+    clean();
 
+    return 0;
+}
+
+void init() {
     scanf("%d%d", &n, &m);
     invoices = (int *)malloc(sizeof(int) * n);
     entries = (int *)malloc(sizeof(int) * m);
@@ -36,36 +36,28 @@ int main() {
         scanf("%d", &entry);
         entries[i] = entry;
     }
-        
-    solve(solution, &solution_index);
-
-    for (int i = 0; i < solution_index; i++) {
-        printf("%c %d -", solution[i].label, solution[i].invoice);
-
-        for (int j = 0; j < solution[i].number_of_payments; j++) {
-            printf(" %d", solution[i].payments[j]);
-        }
-        printf("\n");
-    }
-    return 0;
 }
 
-void solve(Entry solution[], int *solution_index) {
+void solve() {
     int sum, invoices_paid[n], index, next;
     char letter = 'A';
 
     for (int i = 0; i < m; i++) {
+        // for every payment
         sum = 0;
         index = 0;
         next = 0;
 
         for (int j = 0; j < n; j++) {
+            // for every invoice
             sum += invoices[j];
             invoices_paid[index++] = invoices[j];
 
             if (sum == entries[i])
+                // solution found
                 break;
             else if (sum > entries[i]) {
+                // try different invoices
                 sum -= invoices[j];
                 sum -= invoices[j - 1];
                 index -= 2;
@@ -78,24 +70,23 @@ void solve(Entry solution[], int *solution_index) {
             }
         }
 
-        Entry e;
+        printf("%c %d -", letter, entries[i]);
 
-        e.label = letter;
-        e.invoice = entries[i];
-
-        for (int j = 0; j < index; j++) {
-            e.payments[j] = invoices_paid[j];
-            e.number_of_payments = j + 1;
-        }
-
-        solution[(*solution_index)++] = e;
+        for (int j = 0; j < index; j++)
+            printf(" %d", invoices_paid[j]);
+         printf("\n"); 
 
         letter++;
         remove_invoices(invoices, invoices_paid, index, &n);
     }
 }
 
-void remove_invoices(int invoices[], int invoices_paid[], int index, int* n) {
+void clean() {
+    free(invoices);
+    free(entries);
+}
+
+void remove_invoices(int invoices[], int invoices_paid[], int index, int *n) {
     int size = *n;
 
     for (int i = 0; i < size; i++) {
