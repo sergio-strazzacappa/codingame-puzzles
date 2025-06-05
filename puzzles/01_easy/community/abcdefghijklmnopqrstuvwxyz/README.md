@@ -18,35 +18,34 @@ In other words, this problem only displays the consecutive string from **a** to
 
 Answer to output, as follows.
 
-### Example:
+## Example:
 
 <pre style="color:#FFFFFF">
-10
-qadnhwbnyw
-iiopcygydk
-bahlfiojdc
-cfijtdmkgf
-dzhkliplzg
-efgrmpqryx
-loehnovstw
-jrsacymeuv
-fpnocpdkrs
-jlmsvwvuih
+    qadnhwbnyw
+    iiopcygydk
+    bahlfiojdc
+    cfijtdmkgf
+    dzhkliplzg
+    efgrmpqryx
+    loehnovstw
+    jrsacymeuv
+    fpnocpdkrs
+    jlmsvwvuih
 </pre>
 
 The answer to this is...
 
 <pre style="color:#FFFFFF">
-----------
-----------
-ba--------
-c-ij------
-d-hkl---z-
-efg-mpqryx
-----no-stw
---------uv
-----------
-----------
+    -----------
+    ----------
+    ba--------
+    c-ij------
+    d-hkl---z-
+    efg-mpqryx
+    ----no-stw
+    --------uv
+    ----------
+    ----------
 </pre>
 
 As above, only the string alphabetically from **a** to **z** should be
