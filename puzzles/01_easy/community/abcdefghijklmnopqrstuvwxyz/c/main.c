@@ -20,7 +20,6 @@ char **grid;
 
 void init();
 void solve();
-Point *search(char c, int *x, int *y);
 bool find_solution(Point start);
 void clean();
 void debug();
@@ -50,38 +49,14 @@ void init() {
 }
 
 void solve() {
-    int x = 0;
-    int y = 0;
-    bool found = false;
-
-    while (!found) {
-        Point *start = search('a', &x, &y);
-        found = find_solution(*start);
-    }
-}
-
-Point *search(char c, int *x, int *y) {
-    Point *p = NULL;
-    int yy = *y;
-    int xx = *x;
-
-    for (; yy < size; yy++) {
-        if (yy == *y)
-            xx++;
-        else
-            xx = 0;
-        for (; xx < size; xx++) {
-            if (grid[yy][xx] == c) {
-                p = (Point *)malloc(sizeof(Point));
-                p->x = xx;
-                p->y = yy;
-                *x = xx;
-                *y = yy;
-                return p;
+    for (int y = 0; y < size; y++) {
+        for (int x = 0; x < size; x++) {
+            if (grid[y][x] == 'a') {
+                Point start = {x, y};
+                find_solution(start);
             }
         }
     }
-    return p;
 }
 
 bool find_solution(Point start) {
@@ -129,7 +104,7 @@ bool find_solution(Point start) {
             for (int x = 0; x < size; x++) {
                 printf("%c", solution[y][x]);
             }
-        printf("\n");
+            printf("\n");
         }
     }
 
