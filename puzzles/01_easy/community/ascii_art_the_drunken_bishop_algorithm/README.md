@@ -2,7 +2,8 @@
 
 ## Goal
 
-Have you ever wondered how the OpenSSH Random Art is produced? \
+Have you ever wondered how the OpenSSH Random Art is produced?
+
 They used _The Drunken Bishop algorithm_, designed by Alexander von Gernler.
 
 _Bishop Peter finds himself in the middle of an ambient atrium. There are walls
@@ -18,7 +19,8 @@ dream!_
 
 The algorithm is well described in the document _The drunken bishop: An
 analysis of the OpenSSH fingerprint visualization algorithm_ (link in
-reference). \
+reference).
+
 To summarize, OpenSSH uses MD5 to generate a 128 bits fingerprint for the
 server's key, for example in hexadecimal:
 
@@ -92,16 +94,18 @@ these symbols:
 </pre>
 
 We apply the wrap-around logic if the number of times visited is greater than
-14, e.g. we use **o** if a position is visited for 17 times. \
+14, e.g. we use **o** if a position is visited for 17 times.
+
 The special values **S** and the end value **E** mark the start and end position
 of the walk and overwrite the real value of the respective position. Surround
 the chessboard with **+** for corners, **-** for top and bottom edges and **|**
 for left and right edges. Put **[CODINGAME]** at center in the top edge.
 
-References: \
-http://www.dirk-loss.de/sshvis/drunken_bishop.pdf \
-https://www.jfurness.uk/the-drunken-bishop-algorithm/ \
-https://dev.to/krofdrakula/improving-security-by-drawing-identicons-for-ssh-keys-24mc
+References:
+
+-   http://www.dirk-loss.de/sshvis/drunken_bishop.pdf
+-   https://www.jfurness.uk/the-drunken-bishop-algorithm/
+-   https://dev.to/krofdrakula/improving-security-by-drawing-identicons-for-ssh-keys-24mc
 
 ## Input
 

@@ -29,6 +29,12 @@
     2.  C++
     3.  Python
 
+-   **ASCII Art The Drunken Bishop Algorithm**
+
+    1.  C
+    2.  C++
+    3.  Python
+
 #### Official
 
 -   **ASCII Art**
@@ -38,11 +44,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **ASCII Art The Drunken Bishop Algorithm**
-
-    1.  C
-    2.  C++
 
 -   **Asteroids**
 

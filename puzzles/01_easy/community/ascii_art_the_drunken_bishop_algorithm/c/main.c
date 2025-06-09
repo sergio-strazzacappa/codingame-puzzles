@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <ctype.h>
+
+#define ROWS 9
+#define COLS 17
 
 typedef struct position {
     int row;
@@ -6,49 +10,55 @@ typedef struct position {
 } Position;
 
 char fingerprint[129];
+int board[ROWS][COLS];
 Position my_pos;
 
-void move(int board[9][17], char hex[], int index);
+void init();
+void solve();
+void move(char hex[], int index);
 void hex_to_bin(char *binary, char c);
-void do_a_move(int board[9][17], char bits[]);
-void print_board(int board[9][17]);
-void debug_board(int board[9][17]);
+void do_a_move(char bits[]);
+void print_board();
+void debug();
 
 int main() {
+    init();
+    solve();
+
+    return 0;
+}
+
+void init() {
     scanf("%[^\n]", fingerprint);
 
-    char hex[32];
-    int j = 0;
-
-    for (int i = 0; i < 48; i++) {
-        if (fingerprint[i] == ':') {
-            continue;
-        }
-        hex[j] = fingerprint[i];
-        j++;
-    }
-
-    int board[9][17];
-
-    for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 17; j++) {
-            board[i][j] = 0;
+    for (int y = 0; y < ROWS; y++) {
+        for (int x = 0; x < COLS; x++) {
+            board[y][x] = 0;
         }
     }
 
     my_pos.row = 4;
     my_pos.column = 8;
-
-    for (int i = 0; i < 32; i+=2) {
-        move(board, hex, i);
-    }
-
-    print_board(board);
-
-    return 0;
 }
 
-void move(int board[9][17], char hex[], int index) {
+void solve() {
+    char hex[32];
+    int j = 0;
+
+    for (int i = 0; i < 48; i++) {
+        if (fingerprint[i] == ':')
+            continue;
+        hex[j] = fingerprint[i];
+        j++;
+    }
+
+    for (int i = 0; i < 32; i += 2)
+        move(hex, i);
+
+    print_board(board);
+}
+
+void move(char hex[], int index) {
     char high[5] = {'0', '0', '0', '0', '\0'};
     char low[5] = {'0', '0', '0', '0', '\0'};
 
@@ -69,95 +79,32 @@ void move(int board[9][17], char hex[], int index) {
     bits_4[0] = high[0];
     bits_4[1] = high[1];
 
-    do_a_move(board, bits_1);
-    do_a_move(board, bits_2);
-    do_a_move(board, bits_3);
-    do_a_move(board, bits_4);
+    do_a_move(bits_1);
+    do_a_move(bits_2);
+    do_a_move(bits_3);
+    do_a_move(bits_4);
 }
 
 void hex_to_bin(char *binary, char c) {
-    switch(c) {
-        case '1': {
-            binary[3] = '1';
-            break;
-        }
-        case '2': {
-            binary[2] = '1';
-            break;
-        }
-        case '3': {
-            binary[2] = '1';
-            binary[3] = '1';
-            break;
-        }
-        case '4': {
-            binary[1] = '1';
-            break;
-        }
-        case '5': {
-            binary[1] = '1';
-            binary[3] = '1';
-            break;
-        }
-        case '6': {
-            binary[1] = '1';
-            binary[2] = '1';
-            break;
-        }
-        case '7': {
-            binary[1] = '1';
-            binary[2] = '1';
-            binary[3] = '1';
-            break;
-        }
-        case '8': {
-            binary[0] = '1';
-            break;
-        }
-        case '9': {
-            binary[0] = '1';
-            binary[3] = '1';
-            break;
-        }
-        case 'a': {
-            binary[0] = '1';
-            binary[2] = '1';
-            break;
-        }
-        case 'b': {
-            binary[0] = '1';
-            binary[2] = '1';
-            binary[3] = '1';
-            break;
-        }
-        case 'c': {
-            binary[0] = '1';
-            binary[1] = '1';
-            break;
-        }
-        case 'd': {
-            binary[0] = '1';
-            binary[1] = '1';
-            binary[3] = '1';
-            break;
-        }
-        case 'e': {
-            binary[0] = '1';
-            binary[1] = '1';
-            binary[2] = '1';
-            break;
-        }
-        case 'f': {
-            binary[0] = '1';
-            binary[1] = '1';
-            binary[2] = '1';
-            binary[3] = '1';
-            break;
-        }
+    int n;
+
+    if (isdigit(c))
+        n = c - '0';
+    else
+        n = 10 + c - 'a';
+
+    int i = 3;
+    while (n > 0) {
+        binary[i] = (n % 2) + '0';
+        n /= 2;
+        i--;
     }
+
+    for (; i >= 0; i--)
+        binary[i] = '0';
 }
 
-void do_a_move(int board[9][17], char bits[]) {
+void do_a_move(char bits[]) {
     if (bits[0] == '0' && bits[1] == '0') {
         // North/West
         if (my_pos.column == 0 && my_pos.row > 0) {
@@ -205,22 +152,19 @@ void do_a_move(int board[9][17], char bits[]) {
     board[my_pos.row][my_pos.column]++;
 }
 
-void print_board(int board[9][17]) {
+void print_board() {
     printf("+---[CODINGAME]---+\n");
 
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < ROWS; i++) {
         printf("|");
 
-        for (int j = 0; j < 17; j++) {
+        for (int j = 0; j < COLS; j++) {
             if (i == 4 && j == 8) {
                 printf("%c", 'S');
             } else if (i == my_pos.row && j == my_pos.column) {
                 printf("%c", 'E');
             } else {
-                while(board[i][j] > 14) {
-                    board[i][j] -= 15;
-                }
-                switch (board[i][j]) {
+                switch (board[i][j] % 15) {
                     case 0:
                         printf("%c", ' ');
                         break;
@@ -274,12 +218,11 @@ void print_board(int board[9][17]) {
     printf("+-----------------+\n");
 }
 
-void debug_board(int board[9][17]) {
-    for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 17; j++) {
+void debug() {
+    for (int i = 0; i < ROWS; i++) {
+        for (int j = 0; j < COLS; j++) {
             fprintf(stderr, "%d", board[i][j]);
         }
         fprintf(stderr, "\n");
     }
-    fprintf(stderr, "\n");
 }
