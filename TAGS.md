@@ -4,7 +4,7 @@
 
 -   2D Arrays (13/19%)
 -   Arithmetic (1/3%)
--   Arrays (13/33%)
+-   Arrays (14/35%)
 -   Condition **(1/100%)**
 -   Conditions (21/27%)
 -   Data Types (2/29%)
@@ -40,7 +40,7 @@
 -   Heuristic Search (1/25%)
 -   Interpreters (2/17%)
 -   **Lazy Evaluation (1/100%)**
--   Mathematics (5/7%)
+-   Mathematics (6/9%)
 -   Matrix Product (1/33%)
 -   Number Theory (2/14%)
 -   Optimization (2/17%)
