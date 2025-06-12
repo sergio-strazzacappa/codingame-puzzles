@@ -40,9 +40,9 @@
 -   Heuristic Search (1/25%)
 -   Interpreters (2/17%)
 -   **Lazy Evaluation (1/100%)**
--   Mathematics (6/9%)
+-   Mathematics (7/10%)
 -   Matrix Product (1/33%)
--   Number Theory (2/14%)
+-   Number Theory (3/20%)
 -   Optimization (2/17%)
 -   Physics (1/7%)
 -   Probability (2/20%)
