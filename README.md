@@ -35,6 +35,11 @@
     2.  C++
     3.  Python
 
+-   **Asteroids**
+
+    1.  C
+    2.  Python
+
 #### Official
 
 -   **ASCII Art**
@@ -44,10 +49,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Asteroids**
-
-    1.  C
 
 -   **Bijective Numeration**
 

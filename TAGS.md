@@ -64,6 +64,7 @@
 -   DFS (4/17%)
 -   Dynamic Programming (1/3%)
 -   Flood Fill (3/13%)
+-   Image Processing (1/9%)
 -   Maze (2/13%)
 -   Memoization (3/16%)
 -   Pathfinding (5/10%)
