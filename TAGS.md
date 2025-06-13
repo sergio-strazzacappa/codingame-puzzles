@@ -16,7 +16,7 @@
 -   Numbers (3/43%)
 -   Parsing (6/14%)
 -   Recursion (4/7%)
--   Sequences (1/11%)
+-   Sequences (2/22%)
 -   Sets (2/25%)
 -   Sorting (1/7%)
 -   Stack (1/11%)
