@@ -40,6 +40,11 @@
     1.  C
     2.  Python
 
+-   **Bijective Numeration**
+
+    1.  C
+    2.  Python
+
 #### Official
 
 -   **ASCII Art**
@@ -49,10 +54,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Bijective Numeration**
-
-    1.  C
 
 -   **Card Counting When Easily Distracted**
 
