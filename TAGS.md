@@ -25,7 +25,7 @@
 
 ## Silver
 
--   Ascii Art (8/15%)
+-   Ascii Art (9/17%)
 -   Brute-force (1/5%)
 -   Card Games (2/20%)
 -   Chess (2/15%)
