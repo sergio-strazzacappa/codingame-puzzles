@@ -45,6 +45,11 @@
     1.  C
     2.  Python
 
+-   **Card Counting When Easily Distracted**
+
+    1.  C
+    2.  Python
+
 #### Official
 
 -   **ASCII Art**
@@ -54,10 +59,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Card Counting When Easily Distracted**
-
-    1.  C
 
 -   **Compiler CG86 (Easy Version)**
 

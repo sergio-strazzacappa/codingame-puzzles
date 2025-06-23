@@ -1,27 +1,30 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <stdbool.h>
 
 const char symbols[5] = {'K', 'Q', 'J', 'T', 'A'};
 
 char stream_of_consciousness[5001];
 int bust_threshold;
 
-int solve();
-int is_valid(char *observation, int size);
+void init();
+void solve();
+bool is_valid(char *observation, int size);
 
 int main() {
-    scanf("%[^\n]", stream_of_consciousness);
-    scanf("%d", &bust_threshold);
-
-    int solution = solve();
-
-    printf("%d%%\n", solution);
+    init();
+    solve();
 
     return 0;
 }
 
-int solve() {
+void init() {
+    scanf("%[^\n]", stream_of_consciousness);
+    scanf("%d", &bust_threshold);
+}
+
+void solve() {
     char *observation = strtok(stream_of_consciousness, ".");
     int under = (bust_threshold - 1) * 4;
     int missing = 52;
@@ -50,20 +53,21 @@ int solve() {
         observation = strtok(NULL, ".");
     }
 
-    return (round((float)under / missing * 100));
+    printf("%.0f%%\n", round((float)under / missing * 100));
 }
 
-int is_valid(char *observation, int size) {
+// return false if the observations has any non card, true otherwise
+bool is_valid(char *observation, int size) {
     for (int i = 0; i < size; i++) {
-        if (observation[i] >= 50 && observation[i] <= 57)
+        if (observation[i] >= 50 && observation[i] <= 57) // [2, 9]
             continue;
 
-        for (int j = 0; j < 5; j++) {
+        for (int j = 0; j < 5; j++) { // [A, T, J, Q, K]
             if (observation[i] == symbols[j])
                 break;
             if (j == 4) 
-                return 0;
+                return false;
         }
     }
-    return 1;
+    return true;
 }
