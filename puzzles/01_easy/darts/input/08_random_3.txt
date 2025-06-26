@@ -1,0 +1,18 @@
+67
+3
+George
+Ada
+David
+12
+George -8 -176
+Ada -144 -23
+David 23 -24
+George -214 -35
+Ada 28 -63
+David 289 250
+George 82 9
+Ada 262 -201
+David 54 -77
+George -20 15
+Ada -19 27
+David -259 138

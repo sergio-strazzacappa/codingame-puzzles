@@ -1,0 +1,3 @@
+George 10
+Ada 10
+David 10
