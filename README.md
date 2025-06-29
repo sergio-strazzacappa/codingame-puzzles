@@ -60,6 +60,11 @@
     1.  C
     2.  Python
 
+-   **Compiler CG86 (Easy Version)**
+
+    1.  C
+    2.  Python
+
 #### Official
 
 -   **ASCII Art**
@@ -69,10 +74,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Compiler CG86 (Easy Version)**
-
-    1.  C
 
 -   **Container Terminal**
 

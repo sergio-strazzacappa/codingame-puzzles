@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-typedef struct data {
+typedef struct Data {
     int num;
     int times;
 } Data;

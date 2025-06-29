@@ -16,18 +16,18 @@ To reduce the instruction count, repeated operations can be compressed using the
 -   **REPEAT N**: Repeats the next instruction **N** times
 -   **EXIT**: Terminates the program
 
-The **REPEAT** instruction applies only to consecutive identical operations.
+The **REPEAT** instruction applies only to **identical operations** - that is,
+instructions of the same type and operand (e.g. multiple instances of
+**ADD cgx 5**).
 
 The **REPEAT** instruction must come before the instruction it repeats.
 
-Instructions must reflect the original sequence of computation and may only be
-optimized using the **REPEAT** instruction. Reordering for further optimization
-is not permitted.
+Identical operations must be compressed using the **REPEAT** instruction, even
+if they do not appear consecutively in the original expression.
 
-**One Exception**: _If a number is repeated and appears again later in the
-sequence, even if interrupted, it must still be counted as part of the same
-**REPEAT**, as long as the repeated instructions are identical and consecutive
-in the compiled output._
+Instructions must preserve the original order of computation and may only be
+optimized using the **REPEAT** instruction. Reordering or merging of
+non-identical operations is not allowed.
 
 The program must end with an **EXIT** instruction.
 
