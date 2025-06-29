@@ -45,6 +45,11 @@
     1.  C
     2.  Python
 
+-   **Button Mash**
+
+    1.  C
+    2.  Python
+
 -   **Card Counting When Easily Distracted**
 
     1.  C

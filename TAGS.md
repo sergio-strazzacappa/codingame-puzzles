@@ -13,7 +13,7 @@
 -   Lists (5/26%)
 -   Logic (4/13%)
 -   Loops (28/24%)
--   Numbers (3/43%)
+-   Numbers (4/50%)
 -   Parsing (6/14%)
 -   Recursion (4/7%)
 -   Sequences (2/22%)
