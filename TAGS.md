@@ -9,7 +9,7 @@
 -   Conditions (21/27%)
 -   Data Types (2/29%)
 -   Hash Tables (2/33%)
--   Intervals (1/14%)
+-   Intervals (2/29%)
 -   Lists (5/26%)
 -   Logic (4/13%)
 -   Loops (28/24%)
