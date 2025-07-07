@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-typedef struct type {
+typedef struct Type {
     int count;
     int value;
 } Type;
@@ -35,6 +35,7 @@ void init() {
         scanf("%d", &count);
         coins[i].count = count;
     }
+
     for (int i = 0; i < n; i++) {
         int value;
         scanf("%d", &value);
@@ -48,6 +49,7 @@ void solve() {
     int current_value = 0;
     int coin = 0;
     int index = 0;
+
     while (current_value < value_to_reach) {
         Type c = coins[index];
         int current_coins = ceil(((float)value_to_reach - current_value) / c.value);
