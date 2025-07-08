@@ -2,7 +2,7 @@
 
 ## Bronze
 
--   2D Arrays (13/19%)
+-   2D Arrays (14/20%)
 -   Arithmetic (1/3%)
 -   Arrays (14/35%)
 -   Condition **(1/100%)**
@@ -31,7 +31,7 @@
 -   Chess (2/15%)
 -   Coordinates (1/14%)
 -   Dependency Graphs (2/67%)
--   Distances (2/11%)
+-   Distances (3/14%)
 -   Encoding (3/20%)
 -   Geometry (3/9%)
 -   Graph Traversal (1/17%)

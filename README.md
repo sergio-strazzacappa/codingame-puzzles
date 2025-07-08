@@ -55,7 +55,12 @@
     1.  C
     2.  Python
 
--   **Chinese Numberrs**
+-   **Chinese Numbers**
+
+    1.  C
+    2.  Python
+
+-   **City Lights Part 1**
 
     1.  C
     2.  Python
