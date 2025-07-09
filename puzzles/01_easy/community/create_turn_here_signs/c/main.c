@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void split(char input[]);
+void init();
 void solve();
 void right();
 void left();
@@ -18,23 +18,24 @@ struct opts {
 } opts;
 
 int main() {
-    char input[101];
-    scanf("%[^\n]", input);
-
-    split(input);
+    init();
     solve();
 
     return 0;
 }
 
-void split(char input[]) {
+void init() {
+    char input[101];
+    scanf("%[^\n]", input);
+
     char *token = strtok(input, " ");
     int field = 1;
 
     while (token != NULL) {
         switch (field) {
             case 1:
-                opts.direction = token;
+                opts.direction = (char *)malloc(sizeof(char) * 10);
+                strcpy(opts.direction, token);
                 break;
             case 2:
                 opts.how_many_arrows = atoi(token);
@@ -61,11 +62,8 @@ void split(char input[]) {
 }
 
 void solve() {
-    if (strcmp(opts.direction, "right") == 0) {
-        right();
-    } else {
-        left();
-    }
+    if (strcmp(opts.direction, "right") == 0)   right();
+    else                                        left();
 }
 
 void right() {

@@ -2,17 +2,17 @@
 
 ## Goal
 
-Secretary of Transportation Pete has asked you to program electronic signs
-to communicate to drivers that they need to turn left or turn right.
+Secretary of Transportation Pete has asked you to program electronic signs to
+communicate to drivers that they need to turn left or turn right.
 
 Pete wants lots of options for the signs, so the input is:
 
--   **direction** -- which is either **left** or **right**
+-   **direction**: which is either **left** or **right**
 -   **howManyArrows**
 -   **heightOfArrows**
 -   **strokeThicknessOfArrows**
 -   **spacingBetweenArrows**
--   **additionalIndentOfEachLine** -- this will determine if the shape of the
+-   **additionalIndentOfEachLine**: this will determine if the shape of the
     arrows is subtle or more pointy
 
 However, Pete is also a minimalist, so all that input will be in a single
