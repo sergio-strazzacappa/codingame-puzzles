@@ -5,7 +5,6 @@
 -   2D Arrays (14/20%)
 -   Arithmetic (1/3%)
 -   Arrays (14/35%)
--   Condition **(1/100%)**
 -   Conditions (21/27%)
 -   Data Types (2/29%)
 -   Hash Tables (2/33%)
