@@ -86,6 +86,11 @@
     2.  C++
     3.  Python
 
+-   **Crop-Circles**
+
+    1.  C
+    2.  Python
+
 #### Official
 
 -   **ASCII Art**
@@ -95,10 +100,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Crop-Circles**
-
-    1.  C
 
 -   **Darts Checkout Routes**
 

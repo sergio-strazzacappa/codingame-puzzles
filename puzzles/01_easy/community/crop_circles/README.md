@@ -5,7 +5,8 @@
 You are an intern on an Alien spacecraft, and your job is to create
 _Crop-Circles_.
 
-You are assigned a Farming-Field that is planted with a crop of _{}_ \
+You are assigned a Farming-Field that is planted with a crop of **{}**
+
 The Farming-Field is 25 high and 19 wide. The naming convention is:
 
 -   The columns are **a** to **s**
