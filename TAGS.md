@@ -15,7 +15,7 @@
 -   Numbers (4/50%)
 -   Parsing (6/14%)
 -   Recursion (4/7%)
--   Sequences (2/22%)
+-   Sequences (3/33%)
 -   Sets (2/25%)
 -   Sorting (1/7%)
 -   Stack (1/11%)
@@ -39,7 +39,7 @@
 -   Heuristic Search (1/25%)
 -   Interpreters (2/17%)
 -   **Lazy Evaluation (1/100%)**
--   Mathematics (7/10%)
+-   Mathematics (8/12%)
 -   Matrix Product (1/33%)
 -   Number Theory (3/20%)
 -   Optimization (2/17%)
