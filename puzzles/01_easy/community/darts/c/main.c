@@ -4,12 +4,12 @@
 #include <stdbool.h>
 #include <math.h>
 
-typedef struct {
+typedef struct Player {
     char name[101];
     int score;
 } Player;
 
-typedef struct {
+typedef struct Throw {
     char name[101];
     int x;
     int y;
@@ -74,7 +74,7 @@ void solve() {
             players[index].score += 5;
     }
 
-    // sort the scores by the scores in descending order
+    // sort the players by the scores in descending order
     qsort(players, n, sizeof(players[0]), cmp);
 
     // print the output
