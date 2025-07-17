@@ -2,7 +2,7 @@
 
 ## Bronze
 
--   2D Arrays (14/20%)
+-   2D Arrays (15/21%)
 -   Arithmetic (1/3%)
 -   Arrays (14/35%)
 -   Conditions (21/27%)
@@ -11,7 +11,7 @@
 -   Intervals (2/29%)
 -   Lists (5/26%)
 -   Logic (4/13%)
--   Loops (28/24%)
+-   Loops (29/25%)
 -   Numbers (4/50%)
 -   Parsing (6/14%)
 -   Recursion (4/7%)
