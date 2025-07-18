@@ -96,6 +96,11 @@
     1.  C
     2.  Python
 
+-   **Darts Checkout Routes**
+
+    1.  C
+    2.  Python
+
 #### Official
 
 -   **ASCII Art**
@@ -105,10 +110,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Darts Checkout Routes**
-
-    1.  C
 
 -   **Defibrillators**
 
@@ -405,6 +406,10 @@
 ### Spring Challenge 2025
 
 [**C**]
+
+-   **Summer Challenge 2025 - Soak Overflow**
+
+    1.  Python
 
 ## Code Golf
 

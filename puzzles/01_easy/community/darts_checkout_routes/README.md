@@ -34,14 +34,16 @@ single, double or treble.
 ### Checkout
 
 In order to checkout, the total sum of the darts thrown **MUST** equal **score**
-and use **LESS THAN OR EQUAL TO** **darts** number of darts. The final dart in
-any checkout route **MUST** land in the double segment.
+and use **LESS THAN OR EQUAL TO darts** number of darts. The final dart in any
+checkout route **MUST** land in the double segment.
 
 ### Throw Order
 
 Given a valid route, swapping the order of two different darts is considered to
-be two separate routes. \
-Two route example: T5 D10 D10 and D10 T5 D10 are two valid paths. \
+be two separate routes.
+
+Two route example: T5 D10 D10 and D10 T5 D10 are two valid paths.
+
 Single route example: 10 D25 D25 - Swapping dart 2 and 3 is considered the same
 route.
 

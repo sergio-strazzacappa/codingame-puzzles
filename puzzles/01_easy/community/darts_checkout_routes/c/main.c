@@ -4,7 +4,7 @@
 #define N_DOUBLES   21
 #define N_TREBLES   20
 
-typedef struct {
+typedef struct Dartboard {
     int value;
     int mult;
 } Dartboard;
