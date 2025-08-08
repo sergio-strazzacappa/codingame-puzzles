@@ -1,10 +1,8 @@
-# Codingame
+# Codingame Puzzles
 
-## Puzzles
+## Easy
 
-### Easy
-
-#### Community
+### Community
 
 -   **1000000000D World**
 
@@ -101,7 +99,7 @@
     1.  C
     2.  Python
 
-#### Official
+### Official
 
 -   **ASCII Art**
 
