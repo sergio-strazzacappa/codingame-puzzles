@@ -3,26 +3,26 @@
 ## Goal
 
 Your adventure path led you to an inn in a small, forgotten town somewhere to
-the North of Golem Hills. \
+the North of Golem Hills.  
 After gulping the last drop from the 9th mug of elf wine a shady old man
-materializes out of nowhere, in-front of you. \
-You start to doubt the wine. \
+materializes out of nowhere, in-front of you.  
+You start to doubt the wine.  
 **The old man (throwing a pack of old maps on the table):** Do you want to earn
-some good coins? \
-**You (without looking at him):** I've enough for food and wine! \
-**The old man:** What about a whole inn...! \
-**You:** Hm... \
+some good coins?  
+**You (without looking at him):** I've enough for food and wine!  
+**The old man:** What about a whole inn...!  
+**You:** Hm...  
 **The old man:** Yeees and you'll get the glory of being the first one to get to
-this treasure! \
-**You (looking at the bunch of maps):** But they look the same!? \
-**The old man:** Or do they, you must choose wisely. \
+this treasure!  
+**You (looking at the bunch of maps):** But they look the same!?  
+**The old man:** Or do they, you must choose wisely.  
 **The voice of the old man (from nowhere):** Ah right, one more thing, beware of
-the Dragons! \
-You grab your staff and sword, swallow one more whole mug of wine: \
+the Dragons!  
+You grab your staff and sword, swallow one more whole mug of wine:  
 **Well, it's glory time!**
 
 You are given **N** maps for a dungeon. Each map may contain a path to a
-treasure **T**, from starting position [ **startRow**; **startCol** ]. \
+treasure **T**, from starting position [ **startRow**; **startCol** ].  
 Determine the **index** of the map which holds the shortest path from the
 starting position to **T**, but be careful a map may lead you to a **TRAP**.
 
@@ -35,12 +35,12 @@ A valid path must start from [ **startRow**; **startCol** ] and end on **T**.
 The path length is the count of direction symbols plus **1**, for the **T**
 cell.
 
-Example: \
-**W** = 4 **H** = 4 \
-**startRow** = 1 **startCol** = 1 \
+Example:  
+**W** = 4 **H** = 4  
+**startRow** = 1 **startCol** = 1  
 **N** = 3
 
-Maps: \
+Maps:  
 **0**
 
 <pre style="color:#FFFFFF">
@@ -99,8 +99,7 @@ direction symbols + **T**) and map **1** contains a valid path with length
 
 -   There is always a **T** on the maps
 -   If there are maps with valid path from [ **startRow**; **startCol** ] to
-    **T**
--   only one map holds the shortest path
+    **T** only one map holds the shortest path
 -   The given maps are representing the same dungeon, but the position for
     **T** may differ
 -   0 &lt; **N** &lt; 10
