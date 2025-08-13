@@ -108,6 +108,11 @@
     1.  C
     2.  Python
 
+-   **Embedded Chessboards**
+
+    1.  C
+    2.  Python
+
 ### Official
 
 -   **ASCII Art**
@@ -125,10 +130,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Embedded Chessboards**
-
-    1.  C
 
 -   **Encryption/Decryption Of Enigma Machine**
 
