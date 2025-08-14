@@ -66,6 +66,7 @@
 -   **City Lights Part 2**
 
     1.  C
+    2.  Python
 
 -   **Compiler CG86 (Easy Version)**
 
