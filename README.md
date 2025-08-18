@@ -114,6 +114,12 @@
     1.  C
     2.  Python
 
+-   **Encryption/Decryption Of Enigma Machine**
+
+    1.  C
+    2.  C++
+    3.  Python
+
 ### Official
 
 -   **ASCII Art**
@@ -131,11 +137,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Encryption/Decryption Of Enigma Machine**
-
-    1.  C
-    2.  C++
 
 -   **Equivalent Resistance, Circuit Building**
 
