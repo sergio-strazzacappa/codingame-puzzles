@@ -46,10 +46,10 @@ resistance.
 
 ## Example
 
-**N** = 3 \
-A 24 \
-B 8 \
-C 48 \
+**N** = 3  
+A 24  
+B 8  
+C 48  
 [ ( A B ) [ C A ] ]
 
 This will look something like this:
