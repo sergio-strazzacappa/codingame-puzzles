@@ -48,7 +48,7 @@ bottom label. List all connected pairs.
 ## Output
 
 -   List all connected pairs between top and bottom labels, **TB**, in the order
-    of the top labels from Left to Right. Write each pair in a separate line
+    of the top labels **from Left to Right**. Write each pair in a separate line
 
 ## Constraints
 

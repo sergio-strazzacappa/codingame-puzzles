@@ -136,6 +136,12 @@
     1.  C
     2.  Python
 
+-   **Ghost Legs**
+
+    1.  C
+    2.  C++
+    3.  Python
+
 ### Official
 
 -   **ASCII Art**
@@ -153,11 +159,6 @@
     3.  Java
     4.  Javascript
     5.  Python
-
--   **Ghost Legs**
-
-    1.  C
-    2.  C++
 
 -   **Horse Racing Duals**
 
