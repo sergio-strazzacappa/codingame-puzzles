@@ -14,11 +14,10 @@ individually, so that you got multiple separated reports from them.
 
 The fence has markings on it at every meter, count from **meter 0**. A painted
 section is reported as **st** **ed** which means painting is done from [starting
-point] to [ending point].
-
+point] to [ending point].  
 We take only integer readings.
 
-## Example
+### Example
 
 <pre style="color:#FFFFFF">
     st      ed
@@ -36,7 +35,7 @@ fence. Some reported sections are even overlapping. The reports are not sorted
 in any special order.
 
 Having the reports in hands, you want to know which sections of the fence have
-not been painted.
+**not** been painted.
 
 ## Input
 
