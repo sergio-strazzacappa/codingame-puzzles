@@ -156,6 +156,11 @@
     1.  C
     2.  Python
 
+-   **Happy Numbers**
+
+    1.  C
+    2.  Python
+
 ### Official
 
 -   **ASCII Art**
