@@ -107,6 +107,7 @@
 -   **Diagonal-Achoo!!**
 
     1.  C
+    2.  Python
 
 -   **Dungeons And Maps**
 
