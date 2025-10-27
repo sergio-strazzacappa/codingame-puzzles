@@ -83,6 +83,10 @@
     1.  C
     2.  Python
 
+-   **Crack The Trio Code**
+
+    1.  C
+
 -   **Create _Turn Here_ Signs**
 
     1.  C
