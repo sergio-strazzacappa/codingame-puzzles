@@ -86,6 +86,7 @@
 -   **Crack The Trio Code**
 
     1.  C
+    2.  Python
 
 -   **Create _Turn Here_ Signs**
 
