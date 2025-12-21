@@ -4,6 +4,10 @@
 
 ### Community
 
+-   **|Build A Bookcase|**
+
+    1.  Bash
+
 -   **1000000000D World**
 
     1.  C
@@ -173,6 +177,7 @@
     2.  Python
 
 -   **Key-Value Store**
+
     1.  C
     2.  Python
 
