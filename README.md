@@ -14,7 +14,8 @@
 
 -   **Onboarding**
 
-    1. Bash
+    1.  Bash
+    2.  C
 
 -   **1000000000D World**
 
