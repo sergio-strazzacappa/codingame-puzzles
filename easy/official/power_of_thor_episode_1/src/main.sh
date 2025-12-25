@@ -1,7 +1,7 @@
-read lightX lightY initialTX initialTY
+read -r lightX lightY initialTX initialTY
 
 while true; do
-    read remainingTurns
+    read -r remainingTurns
     direction=""
 
     if [ $initialTY -lt $lightY ]; then
@@ -24,5 +24,5 @@ while true; do
         ((initialTX--))
     fi
 
-    echo $direction
+    echo "$direction"
 done

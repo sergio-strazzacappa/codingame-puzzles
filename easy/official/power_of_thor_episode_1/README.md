@@ -1,4 +1,4 @@
-# Power Of Thor - Episode 1
+# Power of Thor - Episode 1
 
 ## The Goal
 
@@ -13,24 +13,24 @@ _X=39,Y=17_.
 
 **Once the program starts** you are given:
 
--   the variable **lightX**: the X position of the light of power that Thor must
+-   the variable `lightX`: the X position of the light of power that Thor must
     reach
--   the variable **lightY**: the Y position of the light of power that Thor must
+-   the variable `lightY`: the Y position of the light of power that Thor must
     reach
--   the variable **initialTX**: the starting X position of Thor
--   the variable **initialTY**: the starting Y position of Thor
+-   the variable `initialTX`: the starting X position of Thor
+-   the variable `initialTY`: the starting Y position of Thor
 
 **At the end of the game turn**, you must output the direction in which you want
 Thor to go among:
 
--   **N** (North)
--   **NE** (North-East)
--   **E** (East)
--   **SE** (South-East)
--   **S** (South)
--   **SW** (South-West)
--   **W** (West)
--   **NW** (North-West)
+-   `N` (North)
+-   `NE` (North-East)
+-   `E` (East)
+-   `SE` (South-East)
+-   `S` (South)
+-   `SW` (South-West)
+-   `W` (West)
+-   `NW` (North-West)
 
 Each movement makes Thor move by 1 cell in the chosen direction.
 
@@ -46,8 +46,8 @@ Thor moves outside the map
 
 -   **Initial phase**: Thor starts on the map at position (3, 6). The light is
     at position (3, 8)
--   **Round 1**: Action **S** - Thor moves towards south. New position is (3, 7)
--   **Round 2**: Action **S** - Thor moves towards south. New position is (3, 8)
+-   **Round 1**: Action `S` - Thor moves towards south. New position is (3, 7)
+-   **Round 2**: Action `S` - Thor moves towards south. New position is (3, 8)
 
 ## Note
 
@@ -60,30 +60,30 @@ slightly different in order to avoid hard coded solutions._
 
 -   The program must first read the initialization data from the standard input,
     then, in an infinite loop, provides on the standard output the instructions
-    to move Thor
+    to move Thor.
 
 ### Initialization Input
 
--   Line 1: 4 integers **lightX** **lightY** **initialTX** **initialTY**.
+-   **Line 1**: 4 integers `lightX` `lightY` `initialTX` `initialTY`.
     (lightX, lightY) indicates the position of the light. (initialTX, initialTY)
     indicates the initial position of Thor
 
 ### Input For A Game Round
 
--   Line 1: the number of remaining moves for Thor to reach the light of power
-    **remainingTurns**. You can ignore this data but you must read it
+-   **Line 1**: the number of remaining moves for Thor to reach the light of
+    power `remainingTurns`. You can ignore this data but you must read it
 
 ### Output For A Game Round
 
--   A single line providing the move to be made: **N** **NE** **E** **SE** **S**
-    **SW** **W** or **N**
+-   A **single line** providing the move to be made: `N` `NE` `E` `SE` `S` `SW`
+    `W` or `N`
 
 ## Constraints
 
--   0 &leq; **lightX** &lt; 40
--   0 &leq; **lightY** &lt; 18
--   0 &leq; **initialTX** &lt; 40
--   0 &leq; **initialTY** &lt; 18
+-   0 &leq; `lightX` &lt; 40
+-   0 &leq; `lightY` &lt; 18
+-   0 &leq; `initialTX` &lt; 40
+-   0 &leq; `initialTY` &lt; 18
 -   Response time for a game round &leq; 100ms
 
 ## Synopsis
