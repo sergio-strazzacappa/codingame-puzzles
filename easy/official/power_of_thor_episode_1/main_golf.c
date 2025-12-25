@@ -1,1 +1,0 @@
-main(){int a,b,c,d;scanf("%d%d%d%d",&a,&b,&c,&d);for(;;){char s[4]="",i=0;if(d<b){s[i++]='S';d++;}if(d>b){s[i++]='N';d--;}if(c<a){s[i++]='E';c++;}if(c>a){s[i++]='W';c--;}printf("%s\n", s);}}
