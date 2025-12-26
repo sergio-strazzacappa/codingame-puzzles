@@ -73,7 +73,7 @@ slightly different in order to avoid hard coded solutions._
 -   **Line 1**: the number of remaining moves for Thor to reach the light of
     power `remainingTurns`. You can ignore this data but you must read it
 
-### Output For A Game Round
+## Output For A Game Round
 
 -   A **single line** providing the move to be made: `N` `NE` `E` `SE` `S` `SW`
     `W` or `N`
