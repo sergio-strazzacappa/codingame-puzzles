@@ -5,7 +5,7 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    int closest_temp;
+    int closest_temp = 0;
 
     for (int i = 0; i < n; i++) {
         int temp;
