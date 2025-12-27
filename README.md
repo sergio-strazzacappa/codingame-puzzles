@@ -12,6 +12,10 @@
 
 ### Official
 
+-   **ASCII Art**
+
+    1.  Bash
+
 -   **Onboarding**
 
     1.  Bash
