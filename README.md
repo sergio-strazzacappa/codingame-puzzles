@@ -15,6 +15,7 @@
 -   **ASCII Art**
 
     1.  Bash
+    2.  C
 
 -   **Onboarding**
 
