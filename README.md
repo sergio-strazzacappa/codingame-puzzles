@@ -16,6 +16,7 @@
 
     1.  Bash
     2.  C
+    3.  Python
 
 -   **Onboarding**
 
