@@ -36,6 +36,10 @@
     2.  C
     3.  Python
 
+-   **Unary**
+
+    1.  Bash
+
 -   **1000000000D World**
 
     1.  C
