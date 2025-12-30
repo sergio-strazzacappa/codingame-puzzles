@@ -18,6 +18,10 @@
     2.  C
     3.  Python
 
+-   **MIME Type**
+
+    1.  Bash
+
 -   **Onboarding**
 
     1.  Bash
