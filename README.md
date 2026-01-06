@@ -10,6 +10,10 @@
     2.  C
     3.  Python
 
+-   **Deus Hex Machina**
+
+    1.  C
+
 ### Official
 
 -   **ASCII Art**
