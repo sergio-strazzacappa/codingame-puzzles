@@ -14,6 +14,10 @@
 
     1.  C
 
+-   **Horse-racing Hyperduals**
+
+    1.  C
+
 ### Official
 
 -   **ASCII Art**
