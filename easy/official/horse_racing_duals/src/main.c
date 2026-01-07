@@ -34,10 +34,10 @@ void solve() {
     int min = INT_MAX;
 
     for (int i = 0; i < n - 1; i++) {
-        int dif = ps[i + 1] - ps[i];
+        int diff = ps[i + 1] - ps[i];
 
-        if (dif < min)
-            min = dif;
+        if (diff < min)
+            min = diff;
     }
 
     printf("%d\n", min);

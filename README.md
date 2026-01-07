@@ -31,6 +31,7 @@
 -   **Horse-racing Duals**
 
     1.  Bash
+    2.  C
 
 -   **MIME Type**
 
