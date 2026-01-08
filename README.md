@@ -38,6 +38,10 @@
     2.  C
     3.  Python
 
+-   **Mars Lander - Episode 1**
+
+    1.  Bash
+
 -   **MIME Type**
 
     1.  Bash
