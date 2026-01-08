@@ -23,7 +23,7 @@ you solve this one in pure bash. Rest assured it is possible nonetheless!)_
 ## Input
 
 -   **Line 1**: the number `N` of horses
--   **`N` following lines**: the speed `V` and elegance `E` of each horse,
+-   `N` **following lines**: the speed `V` and elegance `E` of each horse,
     space-separated
 
 ## Output

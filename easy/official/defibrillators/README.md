@@ -56,7 +56,7 @@ the user’s position. This position is given as input to the program.
 -   **Line 2**: User's latitude (in degrees)
 -   **Line 3**: The number `N` of defibrillators located in the streets of
     Montpellier
--   **`N` next lines**: a description of each defibrillator
+-   `N` **next lines**: a description of each defibrillator
 
 ## Output
 

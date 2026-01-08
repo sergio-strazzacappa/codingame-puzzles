@@ -27,11 +27,11 @@ corresponding to a file, or if the file doesn’t have an extension, print
 
 ### Input
 
--   **Line 1**: Number `N` of elements which make up the association table
--   **Line 2**: Number `Q` of file names to be analyzed
--   **`N` following lines**: One file extension per line and the corresponding
+-   **Line 1**: number `N` of elements which make up the association table
+-   **Line 2**: number `Q` of file names to be analyzed
+-   `N` **following lines**: one file extension per line and the corresponding
     _MIME type_ (separated by a blank space)
--   **`Q` following lines**: One file name per line
+-   `Q` **following lines**: one file name per line
 
 ## Output
 

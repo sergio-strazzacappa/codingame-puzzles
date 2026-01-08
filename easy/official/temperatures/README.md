@@ -20,7 +20,7 @@ the standard output.
 ### Input
 
 -   **Line 1**: `N`, the number of temperatures to analyze
--   **Line 2**: A string with the `N` temperatures expressed as integers ranging
+-   **Line 2**: a string with the `N` temperatures expressed as integers ranging
     from -273 to 5526
 
 ## Output

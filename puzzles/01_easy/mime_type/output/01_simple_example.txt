@@ -1,3 +1,0 @@
-image/gif
-image/png
-text/html

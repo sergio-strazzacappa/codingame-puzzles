@@ -24,9 +24,9 @@ and a single `^` in the middle if needed.
 
 ## Input
 
--   Line 1: integer `height`
--   Line 2: integer `width`
--   Line 3: integer `numberOfShelves`
+-   **Line 1**: integer `height`
+-   **Line 2**: integer `width`
+-   **Line 3**: integer `numberOfShelves`
 
 ## Output
 

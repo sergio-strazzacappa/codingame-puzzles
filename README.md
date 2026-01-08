@@ -41,6 +41,7 @@
 -   **Mars Lander - Episode 1**
 
     1.  Bash
+    2.  C
 
 -   **MIME Type**
 

@@ -15,7 +15,7 @@ closest strengths and shows their difference with an integer (&geq; 0).
 ### Input
 
 -   **Line 1**: number `N` of horses
--   **The `N` following lines**: the strength `P` of each horse. `P` is an
+-   **The** `N` **following lines**: the strength `P` of each horse. `P` is an
     integer
 
 ## Output
