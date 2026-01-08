@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 surface_n = int(input())
 
 for i in range(surface_n):
