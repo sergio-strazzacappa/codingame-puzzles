@@ -72,6 +72,10 @@
     2.  C
     3.  Python
 
+-   **The Descent**
+
+    1.  Bash
+
 -   **Unary**
 
     1.  Bash
