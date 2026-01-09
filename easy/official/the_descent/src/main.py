@@ -1,3 +1,5 @@
+#!/usr/bin/env Python3
+
 while True:
     highest_peak = 0
     highest_index = 0
