@@ -10,6 +10,10 @@
     2.  C
     3.  Python
 
+-   **Brackets, Extreme Edition**
+
+    1.  C
+
 -   **Deus Hex Machina**
 
     1.  C
