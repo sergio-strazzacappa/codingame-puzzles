@@ -88,6 +88,14 @@
     2.  C
     3.  Python
 
+## Medium
+
+### Official
+
+-   **Death First Search - Episode 1**
+
+    1.  C
+
 ---
 
 -   **1000000000D World**
