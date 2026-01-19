@@ -47,7 +47,7 @@ void solve() {
         fprintf(stderr, "[DEBUG] The robot is at (%d, %d)\n", robot.x, robot.y);
 
         for (int i = 0; i < frontier_size - 1; i++) {
-           frontier[i] = frontier[i + 1]; 
+           frontier[i] = frontier[i + 1];
         }
         frontier_size--;
 

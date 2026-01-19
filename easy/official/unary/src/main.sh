@@ -40,7 +40,7 @@ for ((i = ${#binary_message} - 1; i >= 0; i--)); do
         if [[ $current -eq 0 ]]; then
             encoded_message+="00 0"
         else
-            encoded_message+="0 0" 
+            encoded_message+="0 0"
         fi
     elif [[ $current -eq 0 ]]; then
         encoded_message+=" 00 0"

@@ -7,7 +7,7 @@ read -r number_of_shelves
 draw_top() {
     local mid=$(( width / 2 ))
     local i=0
-    
+
     # Print the left half of the top
     while [[ $i -lt $mid ]]; do
         echo -n "/"

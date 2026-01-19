@@ -16,7 +16,7 @@ void solve(char message[]) {
     char binary_message[1000] = "";
 
     for (int i = 0; i < strlen(message); i++) {
-       strcat(binary_message, to_bin(message[i])); 
+       strcat(binary_message, to_bin(message[i]));
     }
 
     char last = '-';

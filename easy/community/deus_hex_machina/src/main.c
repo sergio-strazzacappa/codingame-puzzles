@@ -106,7 +106,7 @@ char *to_bin(char number[]) {
         int hex = -1;
         int k = 3;
 
-        if (number[j] >= '0' && number[j] <= '9' ) 
+        if (number[j] >= '0' && number[j] <= '9' )
             hex = number[j] - '0';
         else
             hex = number[j] - 'a' + 10;

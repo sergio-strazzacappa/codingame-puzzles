@@ -22,7 +22,7 @@ for i in range(number_of_shelves):
 
     if (number_of_shelves - i) <= (height % number_of_shelves):
         current_height += 1
-    
+
     for j in range(current_height):
         shelf = ""
         for k in range(width - 2):
@@ -30,5 +30,5 @@ for i in range(number_of_shelves):
                 shelf += " "
             else:
                 shelf += "_"
-    
+
         print(f"|{shelf}|")

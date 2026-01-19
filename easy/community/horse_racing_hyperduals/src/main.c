@@ -4,7 +4,7 @@
 struct vector {
     int velocity;
     int elegance;
-}; 
+};
 
 int n;
 struct vector *horses;
@@ -72,7 +72,7 @@ unsigned int distance(struct vector v1, struct vector v2) {
 void debug() {
     fprintf(stderr, "Number of horses:%d\n", n);
     fprintf(stderr, "[\n");
-    
+
     for (int i = 0; i < n; i++) {
         fprintf(stderr, "\t(%d, %d)\n", horses[i].velocity, horses[i].elegance);
     }

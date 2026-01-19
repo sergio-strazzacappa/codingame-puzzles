@@ -12,7 +12,7 @@ fi
 
 abs() {
     local n=$1
-    echo $(( n < 0 ? -n : n )) 
+    echo $(( n < 0 ? -n : n ))
 }
 
 closest_temp=$(abs "${temp[0]}")
