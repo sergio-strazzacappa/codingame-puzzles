@@ -94,6 +94,12 @@
 
 ## Medium
 
+### Community
+
+-   **Level Of Nested Parenthesis**
+
+    1.  C
+
 ### Official
 
 -   **Death First Search - Episode 1**
