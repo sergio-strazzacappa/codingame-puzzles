@@ -10,13 +10,13 @@ The expression does not contain whitespace characters.
 
 ## Input
 
--   **A single line**: `expression`
+- **A single line**: `expression`
 
 ## Output
 
--   **A single line**: **true** if each kind of bracket **()**, **[]** and
-    **{}** in `expression` are paired correctly, **false** otherwise
+- **A single line**: **true** if each kind of bracket **()**, **[]** and **{}**
+  in `expression` are paired correctly, **false** otherwise
 
 ## Constraints
 
--   `expression` contains less than 2048 characters
+- `expression` contains less than 2048 characters

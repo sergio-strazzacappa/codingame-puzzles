@@ -4,6 +4,11 @@
 
 ### Community
 
+#### Brackets, Extreme Edition
+
+- C
+- Python
+
 #### Jack Silver: The Casino
 
 - C
@@ -19,10 +24,6 @@
     1.  Bash
     2.  C
     3.  Python
-
--   **Brackets, Extreme Edition**
-
-    1.  C
 
 -   **Deus Hex Machina**
 
