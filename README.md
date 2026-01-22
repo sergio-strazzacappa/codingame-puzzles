@@ -13,6 +13,11 @@
 
 - C
 
+#### May The Triforce Be With You!
+
+- C
+- Python
+
 #### Rugby Score
 
 - C
@@ -34,10 +39,6 @@
     1.  C
 
 -   **Horse-racing Hyperduals**
-
-    1.  C
-
--   **May The Triforce Be With You!**
 
     1.  C
 

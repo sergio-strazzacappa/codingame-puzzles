@@ -15,15 +15,15 @@ sizes, and the Sages believe that by creating Triforces of the corresponding
 sizes, the door will open. Even though no magic has worked until now, your
 programming skills will surely make the difference.
 
-### The program
+## The Program
 
 You must create a program that echoes a Triforce of a given size `N`.
 
--   A triforce is made of 3 identical triangles
--   A triangle of size `N` should be made of `N` lines
--   A triangle's line starts from 1 star, and earns 2 stars each line
--   Take care, a **.** must be located at the top/left to avoid automatic
-    trimming
+- A triforce is made of 3 identical triangles
+- A triangle of size `N` should be made of `N` lines
+- A triangle's line starts from 1 star, and earns 2 stars each line
+- Take care, a **.** must be located at the top/left to avoid automatic
+  trimming
 
 For example, a Triforce of size 3 will look like:
 
@@ -61,13 +61,13 @@ Good luck!
 
 ## Input
 
--   **Line 1**: An Integer `N` is the size of one triangle of the expected
-    triforce
+- **Line 1**: An Integer `N` is the size of one triangle of the expected
+  triforce
 
 ## Output
 
--   **2x**`N` **lines**: The expected Triforce
+- **2x**`N` **lines**: The expected Triforce
 
 ## Constraints
 
--   1 &leq; `N` &leq; 100
+- 1 &leq; `N` &leq; 100
