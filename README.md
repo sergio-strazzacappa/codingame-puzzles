@@ -9,6 +9,10 @@
 - C
 - Python
 
+#### Egyptian Multiplication
+
+- C
+
 #### Jack Silver: The Casino
 
 - C
