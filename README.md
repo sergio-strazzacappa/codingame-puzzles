@@ -26,6 +26,10 @@
 - C
 - Python
 
+#### Nature Of Quadrilaterals
+
+- C
+
 #### Rugby Score
 
 - C
