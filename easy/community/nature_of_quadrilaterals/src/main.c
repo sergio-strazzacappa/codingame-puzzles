@@ -56,24 +56,31 @@ void solve(Point a, Point b, Point c, Point d) {
 
 // is a parallelogram if both opposite sides are parallel to each other
 bool is_parallelogram(Point a, Point b, Point c, Point d) {
-    double m1 = (float)(b.y - a.y) / (b.x - a.x);
-    double m2 = (float)(c.y - b.y) / (c.x - b.x);
-    double m3 = (float)(d.y - c.y) / (d.x - c.x);
-    double m4 = (float)(a.y - d.y) / (a.x - d.x);
+    int abx = b.x - a.x;
+    int aby = b.y - a.y;
+    int bcx = c.x - b.x;
+    int bcy = c.y - b.y;
+    int cdx = d.x - c.x;
+    int cdy = d.y - c.y;
+    int dax = a.x - d.x;
+    int day = a.y - d.y;
 
-    if (m1 == m3 && m2 == m4) return true;
+    // ab | cd
+    if (abx * cdy - aby * cdx != 0) return false;
+    // bc | da
+    if (bcx * day - bcy * dax != 0) return false;
 
-    return false;
+    return true;
 }
 
-// is a rhmbous if the 4 side's length are equal
+// is a rhombus if the 4 side's length are equal
 bool is_rhombus(Point a, Point b, Point c, Point d) {
-    double ab = sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
-    double bc = sqrt(pow(b.x - c.x ,2) + pow(b.y - c.y, 2));
-    double cd = sqrt(pow(c.x - d.x ,2) + pow(c.y - d.y, 2));
-    double da = sqrt(pow(d.x - a.x ,2) + pow(d.y - a.y, 2));
+    int ab = pow(a.x - b.x, 2) + pow(a.y - b.y, 2);
+    int bc = pow(b.x - c.x ,2) + pow(b.y - c.y, 2);
+    int cd = pow(c.x - d.x ,2) + pow(c.y - d.y, 2);
+    int da = pow(d.x - a.x ,2) + pow(d.y - a.y, 2);
 
-    return (ab + bc + cd + da == ab * 4);
+    return ab == bc && bc == cd && cd == da;
 }
 
 // is a rectangle if the 4 angles are right
