@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 light_x, light_y, initial_tx, initial_ty = [int(i) for i in input().split()]
 
 while True:

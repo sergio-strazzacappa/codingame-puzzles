@@ -4,22 +4,26 @@ while true; do
     read -r remainingTurns
     direction=""
 
-    if [ $initialTY -lt $lightY ]; then
+    # Move down
+    if [[ $initialTY -lt $lightY ]]; then
         direction+="S"
         ((initialTY++))
     fi
 
-    if [ $initialTY -gt $lightY ]; then
+    # Move up
+    if [[ $initialTY -gt $lightY ]]; then
         direction+="N"
         ((initialTY--))
     fi
 
-    if [ $initialTX -lt $lightX ]; then
+    # Move right
+    if [[ $initialTX -lt $lightX ]]; then
         direction+="E"
         ((initialTX++))
     fi
 
-    if [ $initialTX -gt $lightX ]; then
+    # Move left
+    if [[ $initialTX -gt $lightX ]]; then
         direction+="W"
         ((initialTX--))
     fi

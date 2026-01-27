@@ -46,6 +46,12 @@
 - C
 - Python
 
+#### Power Of Thor - Episode 1
+
+- Bash
+- C
+- Python
+
 ---
 
 -   **|Build A Bookcase|**
@@ -93,12 +99,6 @@
     3.  Python
 
 -   **MIME Type**
-
-    1.  Bash
-    2.  C
-    3.  Python
-
--   **Power Of Thor - Episode 1**
 
     1.  Bash
     2.  C
