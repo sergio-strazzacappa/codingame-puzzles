@@ -7,8 +7,8 @@ while true; do
     read -r enemy2
     read -r dist2
 
-    if [ $dist1 -lt $dist2 ]
-        then echo "$enemy1"
+    if [[ $dist1 -lt $dist2 ]]; then
+        echo "$enemy1"
     else
         echo "$enemy2"
     fi

@@ -1,10 +1,10 @@
 #! /usr/bin/env python3
 
 while True:
-    enemy1 = input(), int(input())
-    enemy2 = input(), int(input())
+    enemy1, dist1 = input(), int(input())
+    enemy2, dist2 = input(), int(input())
 
-    if enemy1[1] < enemy2[1]:
-        print(enemy1[0])
+    if dist1 < dist2:
+        print(enemy1)
     else:
-        print(enemy2[0])
+        print(enemy2)

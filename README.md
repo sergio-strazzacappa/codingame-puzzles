@@ -38,6 +38,14 @@
 
 - C
 
+### Official
+
+#### Onboarding
+
+- Bash
+- C
+- Python
+
 ---
 
 -   **|Build A Bookcase|**
@@ -85,12 +93,6 @@
     3.  Python
 
 -   **MIME Type**
-
-    1.  Bash
-    2.  C
-    3.  Python
-
--   **Onboarding**
 
     1.  Bash
     2.  C

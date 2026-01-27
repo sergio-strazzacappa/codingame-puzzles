@@ -7,8 +7,10 @@ int main () {
 
         scanf("%s%d%s%d", enemy_1, &dist_1, enemy_2, &dist_2);
 
-        if (dist_1 < dist_2)    printf("%s\n", enemy_1);
-        else                    printf("%s\n", enemy_2);
+        if (dist_1 < dist_2)
+            printf("%s\n", enemy_1);
+        else
+            printf("%s\n", enemy_2);
     }
 
     return 0;
