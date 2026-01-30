@@ -52,6 +52,14 @@
 - C
 - Python
 
+## Hard
+
+### Official
+
+#### Power Of Thor - Episode 2
+
+- C
+
 ---
 
 -   **|Build A Bookcase|**
