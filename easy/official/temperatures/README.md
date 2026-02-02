@@ -19,15 +19,15 @@ the standard output.
 
 ### Input
 
--   **Line 1**: `N`, the number of temperatures to analyze
--   **Line 2**: a string with the `N` temperatures expressed as integers ranging
-    from -273 to 5526
+- **Line 1**: `N`, the number of temperatures to analyze
+- **Line 2**: a string with the `N` temperatures expressed as integers ranging
+  from -273 to 5526
 
 ## Output
 
--   Display 0 (zero) if no temperatures are provided. Otherwise, display the
-    temperature closest to 0
+- Display 0 (zero) if no temperatures are provided. Otherwise, display the
+  temperature closest to 0
 
 ## Constraints
 
--   0 &leq; `N` &lt; 10000
+- 0 &leq; `N` &lt; 10000

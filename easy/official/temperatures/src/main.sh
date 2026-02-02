@@ -5,7 +5,7 @@ declare -a temp
 read -r n
 read -r -a temp
 
-if [ "$n" -eq 0 ]; then
+if [[ "$n" -eq 0 ]]; then
     echo "0"
     exit 0
 fi
@@ -21,13 +21,11 @@ closest_value=${temp[0]}
 for t in "${temp[@]}"; do
     value=$(abs "$t")
 
-    if [ "$value" -lt "$closest_temp" ]; then
+    if [[ "$value" -lt "$closest_temp" ]]; then
         closest_temp=$value
         closest_value=$t
-    elif [ "$value" -eq "$closest_temp" ]; then
-        if [ "$closest_value" -lt 0 ]; then
+    elif [[ "$value" -eq "$closest_temp" && "$closest_value" -lt 0 ]]; then
             closest_value=$t
-        fi
     fi
 done
 

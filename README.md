@@ -52,6 +52,12 @@
 - C
 - Python
 
+#### Temperatures
+
+- Bash
+- C
+- Python
+
 ## Hard
 
 ### Official
@@ -107,12 +113,6 @@
     3.  Python
 
 -   **MIME Type**
-
-    1.  Bash
-    2.  C
-    3.  Python
-
--   **Temperatures**
 
     1.  Bash
     2.  C
