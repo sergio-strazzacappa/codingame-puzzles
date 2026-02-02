@@ -40,6 +40,12 @@
 
 ### Official
 
+#### ASCII Art
+
+- Bash
+- C
+- Python
+
 #### Onboarding
 
 - Bash
@@ -87,12 +93,6 @@
     1.  C
 
 ### Official
-
--   **ASCII Art**
-
-    1.  Bash
-    2.  C
-    3.  Python
 
 -   **Defibrillators**
 

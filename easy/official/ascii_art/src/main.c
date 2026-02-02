@@ -5,26 +5,17 @@
 
 #define ROW_SIZE 1025
 
-int width;
-int height;
-char text[257];
-char **representation;
-int size;
-
-void init();
-void clean();
-void solve();
-void debug();
+void solve(int width, int height, char *text, char **representation);
+void debug(int width, int height, char *text, char **representation,
+    size_t size);
 
 int main() {
-    init();
-    solve();
-    clean();
+    int width;
+    int height;
+    char text[257];
+    char **representation;
+    size_t size;
 
-    return 0;
-}
-
-void init() {
     scanf("%d%d", &width, &height);
     fgetc(stdin);
 
@@ -46,15 +37,17 @@ void init() {
         for (int x = 0; x < size; x++)
             representation[y][x] = row[x];
     }
-}
 
-void clean() {
+    solve(width, height, text, representation);
+
     for (int y = 0; y < height; y++)
         free(representation[y]);
     free(representation);
+
+    return 0;
 }
 
-void solve() {
+void solve(int width, int height, char *text, char **representation) {
     for (int y = 0; y < height; y++) {
         for (int x = 0; x < strlen(text); x++) {
             char c = text[x];
@@ -76,7 +69,7 @@ void solve() {
     }
 }
 
-void debug() {
+void debug(int width, int height, char *text, char **representation, size_t size) {
     fprintf(stderr, "### START DEBUG ###\n");
 
     fprintf(stderr, "The width is: %d\n", width);
