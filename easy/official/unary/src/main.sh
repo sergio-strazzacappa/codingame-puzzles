@@ -13,6 +13,7 @@ to_bin() {
         ((dec_num /= 2))
     done
 
+    # Complete the remaining bits with 0
     while [[ ${#bin_num} -lt 7 ]]; do
         bin_num+="0"
     done

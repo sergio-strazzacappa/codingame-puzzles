@@ -2,11 +2,12 @@
 #include <string.h>
 
 void solve(char message[]);
-char *to_bin(char c);
+void to_bin(char c, char binary[]);
 
 int main() {
     char message[101];
     scanf("%[^\n]", message);
+
     solve(message);
 
     return 0;
@@ -14,9 +15,11 @@ int main() {
 
 void solve(char message[]) {
     char binary_message[1000] = "";
+    char binary[8];
 
     for (int i = 0; i < strlen(message); i++) {
-       strcat(binary_message, to_bin(message[i]));
+        to_bin(message[i], binary);
+        strcat(binary_message, binary);
     }
 
     char last = '-';
@@ -60,8 +63,7 @@ void solve(char message[]) {
     printf("%s\n", encoded_message);
 }
 
-char *to_bin(char c) {
-    static char binary[8];
+void to_bin(char c, char binary[]) {
     int i = 0;
 
     while (c > 0) {
@@ -82,6 +84,4 @@ char *to_bin(char c) {
         binary[strlen(binary) - i - 1] = binary[i];
         binary[i] = tmp;
     }
-
-    return binary;
 }

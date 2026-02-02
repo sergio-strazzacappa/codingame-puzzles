@@ -64,6 +64,12 @@
 - C
 - Python
 
+#### Unary
+
+- Bash
+- C
+- Python
+
 ## Hard
 
 ### Official
