@@ -52,6 +52,12 @@
 - C
 - Python
 
+#### Horse-racing Duals
+
+- Bash
+- C
+- Python
+
 #### MIME Type
 
 - Bash
