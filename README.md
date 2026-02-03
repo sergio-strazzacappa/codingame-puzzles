@@ -46,6 +46,12 @@
 - C
 - Python
 
+#### MIME Type
+
+- Bash
+- C
+- Python
+
 #### Onboarding
 
 - Bash
@@ -118,19 +124,7 @@
     2.  C
     3.  Python
 
--   **MIME Type**
-
-    1.  Bash
-    2.  C
-    3.  Python
-
 -   **The Descent**
-
-    1.  Bash
-    2.  C
-    3.  Python
-
--   **Unary**
 
     1.  Bash
     2.  C

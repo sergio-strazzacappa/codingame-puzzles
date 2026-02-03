@@ -8,28 +8,25 @@
 #define FNAME_MAX_SIZE      256
 #define MAX_ELEM            10000
 
-struct mime_data {
+typedef struct Mime_data {
     char extension[EXT_MAX_SIZE + 1];
     char mime_type[MIME_TYPE_MAX_SIZE + 1];
-};
+} Mime_data;
 
-int n;
-int q;
-struct mime_data table[MAX_ELEM];
-int last_index;
-
-void solve(char fname[]);
-int search(char ext[]);
 int cmp(const void *a, const void *b);
-void print_table();
+void solve(Mime_data table[], size_t table_size, char fname[]);
+int search(Mime_data table[], size_t table_size, char ext[]);
+void print_table(Mime_data table[], size_t table_size);
 
 int main() {
-    last_index = 0;
-
+    Mime_data table[MAX_ELEM];
+    size_t table_size = 0;
+    int n;
+    int q;
     scanf("%d%d", &n, &q);
 
     for (int i = 0; i < n; i++) {
-        struct mime_data m;
+        Mime_data m;
         scanf("%s%s", m.extension, m.mime_type);
         fgetc(stdin);
 
@@ -39,23 +36,27 @@ int main() {
                 m.extension[j] += 'a' - 'A';
         }
 
-        table[last_index++] = m;
+        table[table_size++] = m;
     }
 
-    qsort(table, last_index, sizeof(struct mime_data), cmp);
+    qsort(table, table_size, sizeof(Mime_data), cmp);
 
     for (int i = 0; i < q; i++) {
         char fname[FNAME_MAX_SIZE + 1];
         scanf("%s", fname);
         fgetc(stdin);
 
-        solve(fname);
+        solve(table, table_size, fname);
     }
 
     return 0;
 }
 
-void solve(char fname[]) {
+int cmp(const void *a, const void *b) {
+    return strcmp(((Mime_data *)a)->extension, ((Mime_data *)b)->extension);
+}
+
+void solve(Mime_data table[], size_t table_size,  char fname[]) {
     char *ext = (char *)malloc(sizeof(char) * EXT_MAX_SIZE + 1);
     int in_ext = 0;
     int j = 0;
@@ -83,7 +84,7 @@ void solve(char fname[]) {
     if (strlen(ext) == 0) {
         printf("UNKNOWN\n");
     } else {
-        int index = search(ext);
+        int index = search(table, table_size, ext);
 
         if (index == -1)
             printf("UNKNOWN\n");
@@ -94,10 +95,10 @@ void solve(char fname[]) {
     free(ext);
 }
 
-int search(char ext[]) {
+int search(Mime_data table[], size_t table_size, char ext[]) {
     int low = 0;
     int mid = 0;
-    int high = last_index - 1;
+    int high = table_size - 1;
 
     while (low <= high) {
         mid = low + (high - low) / 2;
@@ -112,15 +113,9 @@ int search(char ext[]) {
     return -1;
 }
 
-int cmp(const void *a, const void *b) {
-    return strcmp(
-        ((struct mime_data *)a)->extension,
-        ((struct mime_data *)b)->extension);
-}
-
-void print_table() {
+void print_table(Mime_data table[], size_t table_size) {
     fprintf(stderr, "[DEBUG] ---------------\n");
-    for (int i = 0; i < last_index; i++) {
+    for (int i = 0; i < table_size; i++) {
         fprintf(stderr, "[DEBUG] (%s, %s)\n",
             table[i].extension, table[i].mime_type);
     }
