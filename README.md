@@ -17,6 +17,10 @@
 
 - C
 
+#### Horse-racing Hyperduals
+
+- C
+
 #### Jack Silver: The Casino
 
 - C
@@ -108,21 +112,11 @@
 
     1.  C
 
--   **Horse-racing Hyperduals**
-
-    1.  C
-
 -   **Robot Reach**
 
     1.  C
 
 ### Official
-
--   **Horse-racing Duals**
-
-    1.  Bash
-    2.  C
-    3.  Python
 
 -   **Mars Lander - Episode 1**
 

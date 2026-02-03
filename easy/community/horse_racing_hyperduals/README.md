@@ -22,17 +22,17 @@ you solve this one in pure bash. Rest assured it is possible nonetheless!)_
 
 ## Input
 
--   **Line 1**: the number `N` of horses
--   `N` **following lines**: the speed `V` and elegance `E` of each horse,
-    space-separated
+- **Line 1**: the number `N` of horses
+- `N` **following lines**: the speed `V` and elegance `E` of each horse,
+  space-separated
 
 ## Output
 
--   **Line 1**: the distance `D` between the two closest strengths
+- **Line 1**: the distance `D` between the two closest strengths
 
 ## Constraints
 
--   10 &leq; `N` &leq; 600
--   0 &leq; `V`, `E` &leq; 10000000
--   `D` &leq; 0
--   All values are integral
+- 10 &leq; `N` &leq; 600
+- 0 &leq; `V`, `E` &leq; 10000000
+- `D` &leq; 0
+- All values are integral

@@ -1,45 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct vector {
+typedef struct Vector {
     int velocity;
     int elegance;
-};
+} Vector;
 
-int n;
-struct vector *horses;
-unsigned int *distances;
-
-void init();
-unsigned int distance(struct vector v1, struct vector v2);
 void solve();
-void debug();
+unsigned int distance(Vector v1, Vector v2);
+void debug(Vector horses[], int n);
 
 int main() {
-    init();
-    debug();
-    solve();
+    int n;
+    Vector *horses;
+    scanf("%d", &n);
+
+    horses = (Vector*)malloc(sizeof(Vector) * n);
+    
+    for (int i = 0; i < n; i++) {
+        int velocity, elegance;
+        scanf("%d%d", &velocity, &elegance);
+
+        Vector v = {velocity, elegance};
+        horses[i] = v;
+    }
+
+    debug(horses, n);
+    solve(horses, n);
+
     free(horses);
 
     return 0;
 }
 
-void init() {
-    scanf("%d", &n);
-
-    horses = (struct vector*)malloc(sizeof(struct vector) * n);
-
-    for (int i = 0; i < n; i++) {
-        int velocity, elegance;
-        scanf("%d%d", &velocity, &elegance);
-
-        struct vector v = {velocity, elegance};
-        horses[i] = v;
-    }
-}
-
-void solve() {
-    distances = (unsigned int *)malloc(sizeof(unsigned int) * n * n);
+void solve(Vector horses[], int n) {
+    int *distances = (int *)malloc(sizeof(int) * n * n);
     int index = 0;
 
     for (int i = 0; i < n - 1; i++) {
@@ -65,11 +60,11 @@ void solve() {
     free(distances);
 }
 
-unsigned int distance(struct vector v1, struct vector v2) {
+unsigned int distance(Vector v1, Vector v2) {
     return (abs((int)v1.velocity - v2.velocity) + abs(v1.elegance - v2.elegance));
 }
 
-void debug() {
+void debug(Vector horses[], int n) {
     fprintf(stderr, "Number of horses:%d\n", n);
     fprintf(stderr, "[\n");
 
