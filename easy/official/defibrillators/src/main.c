@@ -7,33 +7,47 @@
 #define NUMBER_LEN 150
 #define STRING_LEN 257
 
-struct {
+typedef struct Position {
     double lon;
     double lat;
-} user;
+} Position;
 
-typedef struct defib {
+typedef struct Defib {
     char name[STRING_LEN];
     double lon;
     double lat;
 } Defib;
 
-void replace(char str1[], char str2[]);
 void parse_input(char input[], Defib defs[], int index);
-void solve(Defib defs[], int n);
+void solve(Defib defs[], int n, Position user);
 
 int main() {
-    char lon[NUMBER_LEN], lat[NUMBER_LEN], tmp[NUMBER_LEN];
+    char lon[NUMBER_LEN], lat[NUMBER_LEN];
     int n;
 
     scanf("%s%s%d", lon, lat, &n);
     fgetc(stdin);
 
-    replace(lon, tmp);
-    user.lon = atof(tmp);
+    // replace the "," for a "." in lon if neccesary
+    for (int i = 0; i < strlen(lon); i++) {
+        if (lon[i] == ',') {
+            lon[i] = '.';
+            break;
+        }
+    }
 
-    replace(lat, tmp);
-    user.lat = atof(tmp);
+    // replace the "," for a "." in lat if neccesary
+    for (int i = 0; i < strlen(lat); i++) {
+        if (lat[i] == ',') {
+            lat[i] = '.';
+            break;
+        }
+    }
+
+    Position user = {
+        .lon = atof(lon),
+        .lat = atof(lat)
+    };
 
     fprintf(stderr, "[DEBUG] User: (%.6f %.6f)\n", user.lon, user.lat);
 
@@ -46,55 +60,33 @@ int main() {
         parse_input(defib, defs, i);
     }
 
-    solve(defs, n);
+    solve(defs, n, user);
 
     return 0;
-}
-
-// replaces the "," for "." in a floating point number
-void replace(char str1[], char str2[]) {
-    str2[0] = '\0';
-    fprintf(stderr, "[DEBUG] str1: %s - str2: %s\n", str1, str2);
-
-    int index = -1;
-
-    for (int i = 0; i < strlen(str1); i++) {
-        if (str1[i] == ',') {
-            index = i;
-            fprintf(stderr, "[DEBUG] Coma index: %d\n", index);
-            break;
-        }
-    }
-
-    if (index != -1) {
-        // the "," was found
-        strcpy(str2, str1);
-        fprintf(stderr, "[DEBUG] str2: %s\n", str2);
-        str2[index] = '\0'; // marks the ","
-        strcat(str2, ".");
-        fprintf(stderr, "[DEBUG] str2: %s\n", str2);
-        strcat(str2, &str1[index + 1]);
-        fprintf(stderr, "[DEBUG] str2: %s\n", str2);
-    }
-    fprintf(stderr, "[DEBUG] Exit replace\n");
 }
 
 void parse_input(char input[], Defib defs[], int index) {
     int field = 1;
     int j = 0;
-    char field_name[STRING_LEN], tmp[NUMBER_LEN];
+    char field_name[STRING_LEN];
     Defib d;
 
     for (int i = 0; i < strlen(input); i++) {
         if (input[i] == ';') {
-            if (field == 2) {
+            if (field == 2) { // name
                 strcpy(d.name, field_name);
                 fprintf(stderr, "[DEBUG] NAME: %s\n", d.name);
             }
-            if (field == 5) {
-                replace(field_name, tmp);
-                fprintf(stderr, "[DEBUG] LON: %s\n", tmp);
-                d.lon = atof(tmp);
+            if (field == 5) { // longitud
+                // replace the "," for a "." in the lon field if neccesary
+                for (int k = 0; k < strlen(field_name); k++) {
+                    if (field_name[k] == ',') {
+                        field_name[k] = '.';
+                        break;
+                    }
+                }
+                fprintf(stderr, "[DEBUG] LON: %s\n", field_name);
+                d.lon = atof(field_name);
             }
             field++;
             j = 0;
@@ -106,14 +98,21 @@ void parse_input(char input[], Defib defs[], int index) {
         j++;
     }
     field_name[j] = '\0';
-    replace(field_name, tmp);
-    fprintf(stderr, "[DEBUG] LAT: %s\n", tmp);
-    d.lat = atof(tmp);
+
+    // replace the "," for a "." in the lat field if neccesary
+    for (int i = 0; i < strlen(field_name); i++) {
+        if (field_name[i] == ',') {
+            field_name[i] = '.';
+            break;
+        }
+    }
+    fprintf(stderr, "[DEBUG] LAT: %s\n", field_name);
+    d.lat = atof(field_name);
 
     defs[index] = d;
 }
 
-void solve(Defib defs[], int n) {
+void solve(Defib defs[], int n, Position user) {
     char name[STRING_LEN];
     double min_distance = DBL_MAX;
 

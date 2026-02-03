@@ -46,6 +46,12 @@
 - C
 - Python
 
+#### Defibrillators
+
+- Bash
+- C
+- Python
+
 #### MIME Type
 
 - Bash
@@ -105,12 +111,6 @@
     1.  C
 
 ### Official
-
--   **Defibrillators**
-
-    1.  Bash
-    2.  C
-    3.  Python
 
 -   **Horse-racing Duals**
 
