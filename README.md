@@ -92,6 +92,14 @@
 - C
 - Python
 
+## Medium
+
+### Community
+
+#### Horse-hyperracing Hyperduals
+
+- C
+
 ## Hard
 
 ### Official
