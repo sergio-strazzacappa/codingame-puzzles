@@ -62,7 +62,7 @@ int cmp(const void *a, const void *b) {
 void solve(Horse horses[], size_t size) {
     long min_distance = LONG_MAX;
     for (int i = 0; i < size - 1; i++) {
-        for (int j = i + 1; j < size; j++) { 
+        for (int j = i + 1; j < size; j++) {
             int dv = horses[j].velocity - horses[i].velocity;
 
             // since the horses are sorted by velocity, if the delta is already
@@ -75,7 +75,7 @@ void solve(Horse horses[], size_t size) {
             if (d < min_distance) {
                 min_distance = d;
             }
-        } 
+        }
     }
 
     printf("%ld\n", min_distance);

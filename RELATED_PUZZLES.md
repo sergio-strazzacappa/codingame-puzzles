@@ -10,3 +10,11 @@
 - Horse-racing Duals (Easy)
 - Horse-racing hyperduals (Easy)
 - Horse-hyperracing Hyperduals (Medium)
+
+## Mars Lander
+
+- Mars Lander - Episode 1 (Easy)
+- Mars Lander - Episode 2 (Medium)
+- Mars Lander - Episode 3 (Very Hard)
+- Mars Lander (Optimization)
+- Mars Lander - Episode 3 (Code Golf)

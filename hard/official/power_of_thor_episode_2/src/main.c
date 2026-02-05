@@ -23,7 +23,7 @@ bool is_target_safe(Point thor, Point target, char map[HEIGHT][WIDTH]);
 bool is_in_danger(Point thor, char map[HEIGHT][WIDTH]);
 void move(Player thor, Point p, char *action, Point *next);
 void move_danger(Point thor, int *min_distance, char *action, Point *next,
-    int dx, int dy, char map[HEIGHT][WIDTH]); 
+    int dx, int dy, char map[HEIGHT][WIDTH]);
 int range(Player thor, Point giants[], size_t size);
 void print_player(Player p);
 void print_giants(Point *g, size_t size);
@@ -147,7 +147,7 @@ void solve(Player *thor, Point *giants, size_t size) {
     if (range(*thor, giants, size) >= min_strike) {
         strcpy(action, "STRIKE");
     } else if (target.x != -1 && target.y != -1) {
-        move(*thor, target, action, &next); 
+        move(*thor, target, action, &next);
     } else if (is_in_danger(thor->position, map)) {
         fprintf(stderr, "[DEBUG] Thor is in danger, should move\n");
 
@@ -173,7 +173,7 @@ void solve(Player *thor, Point *giants, size_t size) {
     if (strcmp(action, "WAIT") != 0 && strcmp(action, "STRIKE") != 0) {
         thor->position = next;
     }
-        
+
     fprintf(stderr, "[DEBUG] Move to (%d, %d)\n", target.x, target.y);
     printf("%s\n", action);
 }

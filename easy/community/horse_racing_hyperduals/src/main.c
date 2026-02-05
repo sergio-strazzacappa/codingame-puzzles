@@ -16,7 +16,7 @@ int main() {
     scanf("%d", &n);
 
     horses = (Vector*)malloc(sizeof(Vector) * n);
-    
+
     for (int i = 0; i < n; i++) {
         int velocity, elegance;
         scanf("%d%d", &velocity, &elegance);

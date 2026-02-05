@@ -62,6 +62,12 @@
 - C
 - Python
 
+#### Mars Lander - Episode 1
+
+- Bash
+- C
+- Python
+
 #### MIME Type
 
 - Bash
@@ -125,12 +131,6 @@
     1.  C
 
 ### Official
-
--   **Mars Lander - Episode 1**
-
-    1.  Bash
-    2.  C
-    3.  Python
 
 -   **The Descent**
 
