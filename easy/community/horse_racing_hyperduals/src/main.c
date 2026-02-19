@@ -6,7 +6,7 @@ typedef struct Vector {
     int elegance;
 } Vector;
 
-void solve();
+void solve(Vector horses[], int n);
 unsigned int distance(Vector v1, Vector v2);
 void debug(Vector horses[], int n);
 

@@ -9,23 +9,21 @@ enum Call {
     PLAIN
 };
 
-int rounds;
-int cash;
-
-void solve();
+void solve(int rounds, int cash);
 int play_round(int cash, char play[]);
 
 int main() {
+    int rounds, cash;
     scanf("%d", &rounds);
     scanf("%d", &cash);
     fgetc(stdin);
 
-    solve();
+    solve(rounds, cash);
 
     return 0;
 }
 
-void solve() {
+void solve(int rounds, int cash) {
     for (int i = 0; i < rounds; i++) {
         char play[1025];
         scanf("%[^\n]", play);

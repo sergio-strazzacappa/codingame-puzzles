@@ -13,11 +13,11 @@
 
 - C
 
-#### How Time Flies
+#### Horse-racing Hyperduals
 
 - C
 
-#### Horse-racing Hyperduals
+#### How Time Flies
 
 - C
 
@@ -35,6 +35,10 @@
 - C
 
 #### Rugby Score
+
+- C
+
+#### Shadow Casting
 
 - C
 

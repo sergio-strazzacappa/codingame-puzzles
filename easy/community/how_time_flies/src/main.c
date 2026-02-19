@@ -3,27 +3,28 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-struct Date {
+typedef struct Date {
     int day;
     int month;
     int year;
-} begin, end;
+} Date;
 
 const int DAYS_PER_MONTH[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-void init();
-void solve();
+void parse_input(Date *begin, Date *end);
+void solve(Date begin, Date end);
 bool is_leap_year(int year);
 int number_of_leap_years(int year1, int year2);
 
 int main() {
-    init();
-    solve();
+    Date begin, end;
+    parse_input(&begin, &end);
+    solve(begin, end);
 
     return 0;
 }
 
-void init() {
+void parse_input(Date *begin, Date *end) {
     char b[11];
     char e[11];
 
@@ -31,25 +32,25 @@ void init() {
     scanf("%s", e);
 
     char *token = strtok(b, ".");
-    begin.day = atoi(token);
+    begin->day = atoi(token);
 
     token = strtok(NULL, ".");
-    begin.month = atoi(token);
+    begin->month = atoi(token);
 
     token = strtok(NULL, ".");
-    begin.year = atoi(token);
+    begin->year = atoi(token);
 
     token = strtok(e, ".");
-    end.day = atoi(token);
+    end->day = atoi(token);
 
     token = strtok(NULL, ".");
-    end.month = atoi(token);
+    end->month = atoi(token);
 
     token = strtok(NULL, ".");
-    end.year = atoi(token);
+    end->year = atoi(token);
 }
 
-void solve() {
+void solve(Date begin, Date end) {
     int year_diff, month_diff, total_days;
 
     // calculate the years diff and months diff

@@ -1,21 +1,19 @@
 #include <stdio.h>
 
-int a;
-int b;
-
-void solve();
-void swap();
+void solve(int a, int b);
+void swap(int *x, int *y);
 
 int main() {
+    int a, b;
     scanf("%d%d", &a, &b);
-    solve();
+    solve(a, b);
 
     return 0;
 }
 
-void solve() {
+void solve(int a, int b) {
     if (a < b)
-        swap();
+        swap(&a, &b);
 
     printf("%d * %d\n", a, b);
 
@@ -45,9 +43,9 @@ void solve() {
     printf("= %d\n", result);
 }
 
-// swap the values of a and b, so a is always greater than b
-void swap() {
-    int tmp = a;
-    a = b;
-    b = tmp;
+// swap the values of x and y
+void swap(int *x, int *y) {
+    int tmp = *x;
+    *x = *y;
+    *y = tmp;
 }

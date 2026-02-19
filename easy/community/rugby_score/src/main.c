@@ -1,18 +1,17 @@
 #include <stdio.h>
 
-int score;
-
-void solve();
+void solve(int score);
 
 int main() {
+    int score;
     scanf("%d", &score);
 
-    solve();
+    solve(score);
 
     return 0;
 }
 
-void solve() {
+void solve(int score) {
     int computed_score = score;
     int tries = 0;
     int transformations = 0;
